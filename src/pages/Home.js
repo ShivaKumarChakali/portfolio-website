@@ -112,7 +112,7 @@ const Home = () => {
               </a>
 
               <a
-                href="https://drive.google.com/file/d/1hcfVcWUwRT59HqlMNFiAqF56Dof_dOvB/view?usp=drive_link"
+                href="https://drive.google.com/file/d/1kMm-sCnyCSIDkWTNvb5eu3PuQQZicigZ/view?usp=drive_link"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-secondary flex items-center space-x-2"
