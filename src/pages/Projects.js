@@ -30,25 +30,6 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: 'LEZIT Transports',
-      description: 'A comprehensive full-stack transport booking platform that enables users to book various transportation services. Features include user authentication, real-time booking management, payment processing, and email notifications.',
-      longDescription: 'LEZIT Transports is a modern transportation booking platform built with React and TypeScript for the frontend, and Node.js with MongoDB for the backend. The application includes JWT authentication, Google OAuth integration, and email notifications using Nodemailer. The platform supports multiple transport types, real-time availability checking, and a responsive design for mobile and desktop users.',
-      image: 'https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80',
-      category: 'fullstack',
-      technologies: ['React', 'TypeScript', 'Node.js', 'MongoDB', 'JWT', 'Google OAuth', 'Nodemailer', 'Express'],
-      liveUrl: 'https://lezit-transports-frontend.onrender.com/',
-      githubUrl: 'https://github.com/ChakaliShivaKumar/LEZIT-Transports',
-      features: [
-        'User authentication with JWT and Google OAuth',
-        'Real-time transport booking system',
-        'Email notifications for bookings',
-        'Responsive design for all devices',
-        'Admin dashboard for transport management',
-        'Payment integration ready'
-      ]
-    },
-    {
-      id: 2,
       title: 'Smart Traffic Lights with Reinforcement Learning',
       description: 'An innovative traffic management system using federated Deep Q-Network (DQN) agents in SUMO simulation environment. Achieved a remarkable 99.8% reduction in average wait times.',
       longDescription: 'This research project implements a federated reinforcement learning approach for traffic signal optimization. Using SUMO (Simulation of Urban MObility) as the simulation environment, the system employs multiple DQN agents that learn optimal traffic signal timing strategies. The federated approach allows for distributed learning while maintaining privacy and improving overall system performance.',
@@ -67,7 +48,7 @@ const Projects = () => {
       ]
     },
     {
-      id: 3,
+      id: 2,
       title: 'Power BI Analytics Dashboard',
       description: 'Comprehensive business intelligence dashboard built with Power BI, featuring advanced DAX calculations, M query transformations, and Azure Synapse integration for real-time data processing.',
       longDescription: 'Developed during my time at Deloitte, this Power BI dashboard provides comprehensive business analytics with advanced DAX calculations and M query transformations. The solution integrates with Azure Synapse for real-time data processing and includes automated refresh capabilities. The dashboard features interactive visualizations, drill-down capabilities, and mobile-responsive design.',
@@ -86,7 +67,7 @@ const Projects = () => {
       ]
     },
     {
-      id: 4,
+      id: 3,
       title: 'BookMyEvent (BME)',
       description: 'College capstone project using MERN-style architecture with AWS services to manage event scheduling, ticket booking, and calendar viewing with a responsive React.js frontend and secure Node.js/Express.js backend.',
       longDescription: 'BookMyEvent (BME) is a comprehensive event management platform developed as a college capstone project. The application uses MERN-style architecture with AWS services for scalable, low-latency data storage. Features include role-based authentication with JWT, QR Code generation for digital tickets, real-time availability checks, and a responsive design for both mobile and desktop users.',
@@ -105,7 +86,7 @@ const Projects = () => {
       ]
     },
     {
-      id: 5,
+      id: 4,
       title: 'AWS Infrastructure Automation',
       description: 'DevOps project focused on automating AWS infrastructure deployment using Infrastructure as Code (IaC) principles and CI/CD pipelines.',
       longDescription: 'Developed during my internship at Amazon, this project implements Infrastructure as Code using AWS CloudFormation and Terraform. The solution includes automated CI/CD pipelines with Jenkins and GitHub Actions, containerization with Docker, and comprehensive monitoring and logging solutions.',
@@ -269,13 +250,13 @@ const Projects = () => {
               variants={itemVariants}
               className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-4"
             >
-              Featured Project: LEZIT Transports
+              Featured Project: Smart Traffic Lights with Reinforcement Learning
             </motion.h2>
             <motion.p
               variants={itemVariants}
               className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto"
             >
-              A comprehensive full-stack transport booking platform
+              An innovative AI-powered traffic management system achieving 99.8% reduction in wait times
             </motion.p>
           </motion.div>
 
@@ -290,9 +271,10 @@ const Projects = () => {
                     Project Overview
                   </h3>
                   <p className="text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
-                    LEZIT Transports is a modern transportation booking platform that enables users to book various 
-                    transportation services. Built with React and TypeScript for the frontend, and Node.js with MongoDB 
-                    for the backend, the application includes comprehensive features for both users and administrators.
+                    This research project implements a federated reinforcement learning approach for traffic signal optimization. 
+                    Using SUMO (Simulation of Urban MObility) as the simulation environment, the system employs multiple DQN agents 
+                    that learn optimal traffic signal timing strategies. The federated approach allows for distributed learning 
+                    while maintaining privacy and improving overall system performance.
                   </p>
                   
                   <div className="space-y-4">
@@ -316,9 +298,9 @@ const Projects = () => {
                   </h3>
                   <div className="space-y-4">
                     <div>
-                      <h4 className="font-semibold text-gray-900 dark:text-gray-100 mb-2">Frontend</h4>
+                      <h4 className="font-semibold text-gray-900 dark:text-gray-100 mb-2">AI/ML</h4>
                       <div className="flex flex-wrap gap-2">
-                        {['React', 'TypeScript', 'HTML/CSS'].map((tech) => (
+                        {['Python', 'TensorFlow', 'Reinforcement Learning', 'DQN'].map((tech) => (
                           <span key={tech} className="px-3 py-1 bg-blue-100 dark:bg-blue-900/20 text-blue-700 dark:text-blue-300 rounded-full text-sm">
                             {tech}
                           </span>
@@ -326,9 +308,9 @@ const Projects = () => {
                       </div>
                     </div>
                     <div>
-                      <h4 className="font-semibold text-gray-900 dark:text-gray-100 mb-2">Backend</h4>
+                      <h4 className="font-semibold text-gray-900 dark:text-gray-100 mb-2">Simulation</h4>
                       <div className="flex flex-wrap gap-2">
-                        {['Node.js', 'Express', 'MongoDB', 'JWT'].map((tech) => (
+                        {['SUMO', 'Federated Learning', 'NumPy', 'Pandas'].map((tech) => (
                           <span key={tech} className="px-3 py-1 bg-green-100 dark:bg-green-900/20 text-green-700 dark:text-green-300 rounded-full text-sm">
                             {tech}
                           </span>
@@ -336,9 +318,9 @@ const Projects = () => {
                       </div>
                     </div>
                     <div>
-                      <h4 className="font-semibold text-gray-900 dark:text-gray-100 mb-2">Services</h4>
+                      <h4 className="font-semibold text-gray-900 dark:text-gray-100 mb-2">Performance</h4>
                       <div className="flex flex-wrap gap-2">
-                        {['Google OAuth', 'Nodemailer', 'REST APIs'].map((tech) => (
+                        {['99.8% Wait Time Reduction', 'Real-time Optimization', 'Distributed Learning'].map((tech) => (
                           <span key={tech} className="px-3 py-1 bg-purple-100 dark:bg-purple-900/20 text-purple-700 dark:text-purple-300 rounded-full text-sm">
                             {tech}
                           </span>
@@ -349,12 +331,12 @@ const Projects = () => {
 
                   <div className="mt-6">
                     <a
-                      href="https://lezit-transports-frontend.onrender.com/"
+                      href="https://github.com/ChakaliShivaKumar/Smart-Traffic-Lights"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="btn-primary inline-flex items-center space-x-2"
                     >
-                      <span>View Live Project</span>
+                      <span>View Code</span>
                       <ExternalLink size={20} />
                     </a>
                   </div>

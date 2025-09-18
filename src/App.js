@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
@@ -40,9 +40,19 @@ function App() {
     setDarkMode(!darkMode);
   };
 
+  // Scroll to top on route change
+  const ScrollToTop = () => {
+    const location = useLocation();
+    useEffect(() => {
+      window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+    }, [location.pathname]);
+    return null;
+  };
+
   return (
     <Router>
       <div className="min-h-screen bg-white dark:bg-dark-900 transition-colors duration-300">
+        <ScrollToTop />
         <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
         <AnimatePresence mode="wait">
           <Routes>

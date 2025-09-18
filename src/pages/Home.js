@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Mail, Linkedin, Download } from 'lucide-react';
+import { ArrowRight, Mail, Linkedin } from 'lucide-react';
 
 const Home = () => {
   const containerVariants = {
@@ -78,7 +78,7 @@ const Home = () => {
               variants={itemVariants}
               className="text-xl md:text-2xl text-gray-600 dark:text-gray-400 mb-8"
             >
-              Graduate Student & Software Engineer
+              Full-Stack Software Engineer & Graduate Student
             </motion.h2>
 
             {/* Description */}
@@ -86,8 +86,7 @@ const Home = () => {
               variants={itemVariants}
               className="text-lg text-gray-600 dark:text-gray-400 mb-12 max-w-2xl mx-auto leading-relaxed"
             >
-              Currently pursuing M.S. in Computer Science at UNC Charlotte. Passionate about building innovative solutions 
-              and creating impactful user experiences. Actively seeking Co-op and Full-time opportunities in software engineering.
+              Full-Stack Software Engineer pursuing an M.S. in Computer Science at UNC Charlotte. Previously at LEZIT Transports (Aug 2024 – Jul 2025). I build fast, accessible web apps with React and Node.js and ship to the cloud. Currently seeking full-time software engineering roles.
             </motion.p>
 
             {/* CTA Buttons */}
@@ -111,15 +110,6 @@ const Home = () => {
                 <span>Get In Touch</span>
               </a>
 
-              <a
-                href="https://drive.google.com/file/d/1kMm-sCnyCSIDkWTNvb5eu3PuQQZicigZ/view?usp=drive_link"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-secondary flex items-center space-x-2"
-              >
-                <Download size={20} />
-                <span>View Resume</span>
-              </a>
             </motion.div>
 
             {/* Social Links */}
@@ -184,12 +174,46 @@ const Home = () => {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {/* Deloitte Experience */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {/* LEZIT Transports */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
+              viewport={{ once: true }}
+              className="card p-6 relative overflow-hidden"
+            >
+              {/* Past Role Badge removed */}
+              
+              <div className="flex items-start space-x-4">
+                <div className="p-3 bg-white dark:bg-gray-800 rounded-lg shadow-sm">
+                  <div className="w-8 h-8 bg-gradient-to-r from-green-500 to-green-600 rounded-lg flex items-center justify-center">
+                    <span className="text-white font-bold text-sm">L</span>
+                  </div>
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-xl font-bold text-gray-900 dark:text-gray-100 mb-2">
+                    LEZIT Transports
+                  </h3>
+                  <p className="text-primary-600 dark:text-primary-400 font-medium mb-2">
+                    Full-Stack Software Engineer
+                  </p>
+                  <p className="text-sm text-gray-500 dark:text-gray-500 mb-3">
+                    Aug 2024 – Jul 2025 • Remote
+                  </p>
+                  <p className="text-gray-600 dark:text-gray-400 text-sm">
+                    Executed end-to-end software solution design and development for a real-time transportation booking platform.
+                    Developed secure code using React.js, TypeScript, and Node.js with scalable backend architecture.
+                  </p>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Deloitte Experience */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
               viewport={{ once: true }}
               className="card p-6"
             >
@@ -206,14 +230,14 @@ const Home = () => {
                     Deloitte USI
                   </h3>
                   <p className="text-primary-600 dark:text-primary-400 font-medium mb-2">
-                    React / Power BI Developer
+                    Analyst & Software Developer
                   </p>
                   <p className="text-sm text-gray-500 dark:text-gray-500 mb-3">
-                    Sep 2023 – Jul 2024 • Hyderabad, India
+                    Sep 2023 – Jul 2024 • Telangana, India
                   </p>
                   <p className="text-gray-600 dark:text-gray-400 text-sm">
-                    Built React applications and Power BI dashboards with DAX, M, SQL Server, and Azure Synapse. 
-                    Automated reporting pipelines and collaborated in Agile development teams.
+                    Executed software development tasks, created Power BI dashboards with SQL Server and Azure cloud. 
+                    Reduced manual reporting processes by 40% through automation and improved application performance by 20%.
                   </p>
                 </div>
               </div>
@@ -223,7 +247,7 @@ const Home = () => {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
+              transition={{ duration: 0.5, delay: 0.3 }}
               viewport={{ once: true }}
               className="card p-6 relative overflow-hidden"
             >
@@ -247,14 +271,14 @@ const Home = () => {
                     Amazon
                   </h3>
                   <p className="text-primary-600 dark:text-primary-400 font-medium mb-2">
-                    Cloud Infrastructure DevOps Intern
+                    Cloud Infrastructure & DevOps Engineer Intern
                   </p>
                   <p className="text-sm text-gray-500 dark:text-gray-500 mb-3">
-                    Jan 2023 – Jun 2023 • Hyderabad, India
+                    Jan 2023 – Jun 2023 • Development Center, Telangana, India
                   </p>
                   <p className="text-gray-600 dark:text-gray-400 text-sm mb-3">
-                    Improved CI/CD pipelines and managed cloud infrastructure. Resolved deployment and security issues 
-                    while working with AWS services and automation tools.
+                    Enhanced CI/CD automation pipelines, reducing manual toil by 50%. Implemented secure IAM-based authentication 
+                    systems and cloud migration solutions using AWS CloudFormation and ECS.
                   </p>
                   <div className="bg-yellow-50 dark:bg-yellow-900/20 border-l-4 border-yellow-400 pl-3 py-2">
                     <p className="text-sm text-yellow-800 dark:text-yellow-200 font-medium">
@@ -287,43 +311,11 @@ const Home = () => {
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* LEZIT Transports */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-              viewport={{ once: true }}
-              className="card p-6 hover:scale-105 transition-transform duration-300"
-            >
-              <div className="h-48 rounded-lg mb-4 overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
-                  alt="LEZIT Transports" 
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-2">
-                LEZIT Transports
-              </h3>
-              <p className="text-gray-600 dark:text-gray-400 mb-4">
-                Full-stack transport booking platform with React, Node.js, and MongoDB
-              </p>
-              <a
-                href="https://lezit-transports-frontend.onrender.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-primary-600 dark:text-primary-400 hover:underline flex items-center space-x-1"
-              >
-                <span>View Project</span>
-                <ArrowRight size={16} />
-              </a>
-            </motion.div>
-
             {/* Smart Traffic Lights */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
               viewport={{ once: true }}
               className="card p-6 hover:scale-105 transition-transform duration-300"
             >
@@ -338,14 +330,40 @@ const Home = () => {
                 Smart Traffic Lights
               </h3>
               <p className="text-gray-600 dark:text-gray-400 mb-4">
-                Reinforcement learning solution reducing wait time by 40%.
+                Reinforcement learning solution achieving 99.8% reduction in wait times
               </p>
               <span className="text-gray-500 dark:text-gray-500 text-sm">
                 Research Project
               </span>
             </motion.div>
 
-            {/* Deloitte Experience */}
+            {/* BookMyEvent */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="card p-6 hover:scale-105 transition-transform duration-300"
+            >
+              <div className="h-48 rounded-lg mb-4 overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+                  alt="BookMyEvent" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-2">
+                BookMyEvent (BME)
+              </h3>
+              <p className="text-gray-600 dark:text-gray-400 mb-4">
+                Event management platform with MERN architecture and AWS services
+              </p>
+              <span className="text-gray-500 dark:text-gray-500 text-sm">
+                Capstone Project
+              </span>
+            </motion.div>
+
+            {/* Power BI Development */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}

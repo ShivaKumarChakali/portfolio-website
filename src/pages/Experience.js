@@ -26,39 +26,52 @@ const Experience = () => {
 
   const experiences = [
     {
+      company: 'LEZIT Transports (Startup)',
+      role: 'Full-Stack Software Engineer',
+      duration: 'August 2024 – July 2025',
+      location: 'Remote',
+      icon: Code,
+      color: 'from-green-500 to-green-600',
+      achievements: [
+        'Executed end-to-end software solution design and development for a real-time transportation booking platform, applying secure coding practices and technical troubleshooting methodologies',
+        'Developed high-quality, secure code using React.js, TypeScript, and JavaScript with peer code reviews; implemented modular, testable components following industry best practices',
+        'Designed and built scalable backend architecture with Node.js, Express.js, and MongoDB, implementing secure authentication systems (JWT, OAuth 2.0) and RESTful APIs',
+        'Applied automation to reduce manual processes in SDLC using CI/CD pipelines via GitHub Actions, achieving continuous deployment to cloud infrastructure',
+        'Gathered and analyzed technical data sets to troubleshoot performance issues, implementing continuous improvements that enhanced platform stability and user experience'
+      ],
+      technologies: ['React.js', 'TypeScript', 'JavaScript', 'Node.js', 'Express.js', 'MongoDB', 'JWT', 'OAuth 2.0', 'RESTful APIs', 'CI/CD', 'GitHub Actions']
+    },
+    {
       company: 'Deloitte USI',
-      role: 'React / Power BI Developer',
-      duration: 'Sep 2023 – Jul 2024',
-      location: 'Hyderabad, India',
+      role: 'Analyst & Software Developer',
+      duration: 'September 2023 – July 2024',
+      location: 'Telangana, India',
       icon: Building,
       color: 'from-blue-500 to-blue-600',
       achievements: [
-        'Built React applications and Power BI dashboards using DAX, M, SQL Server, Azure Synapse, and REST APIs',
-        'Automated reporting pipelines and collaborated in Agile development teams',
-        'Developed data visualization solutions for business intelligence and analytics',
-        'Implemented responsive web applications with modern React practices',
-        'Worked with Azure cloud services for data processing and storage',
-        'Collaborated with cross-functional teams to deliver high-quality solutions'
+        'Executed software development and maintenance tasks, creating Power BI dashboards integrated with SQL Server and Azure cloud',
+        'Applied business analysis skills to interpret requirements and develop technical solutions, reducing manual reporting processes by 40% through automation',
+        'Collaborated effectively in large Agile/Scrum teams to achieve organizational goals, fostering inclusive innovation culture through knowledge sharing and mentorship',
+        'Developed secure, high-quality React.js components with comprehensive testing, improving application performance by 20% and reducing production defects',
+        'Synthesized complex data sets to generate insights for continuous software improvements, supporting data-driven decision making across multiple projects'
       ],
-      technologies: ['React', 'Power BI', 'DAX', 'M Query', 'SQL Server', 'Azure Synapse', 'REST APIs', 'Agile']
+      technologies: ['React.js', 'Power BI', 'SQL Server', 'Azure Cloud', 'Agile/Scrum', 'Business Analysis', 'Data Visualization', 'Testing']
     },
     {
       company: 'Amazon',
-      role: 'Cloud Infrastructure DevOps Intern',
-      duration: 'Jan 2023 – Jun 2023',
-      location: 'Hyderabad, India',
+      role: 'Cloud Infrastructure & DevOps Engineer Intern',
+      duration: 'January 2023 – June 2023',
+      location: 'Development Center, Telangana, India',
       icon: Cloud,
       color: 'from-orange-500 to-orange-600',
       achievements: [
-        'Improved CI/CD pipelines and managed cloud infrastructure',
-        'Resolved deployment and security issues in production environments',
-        'Automated infrastructure provisioning and configuration management',
-        'Implemented monitoring and logging solutions for better observability',
-        'Worked with AWS services for cloud infrastructure management',
-        'Collaborated with senior engineers on large-scale infrastructure projects',
-        '🏆 Received accolade from senior manager for exceptional performance and contributions'
+        'Enhanced CI/CD automation pipelines using advanced frameworks, reducing manual toil in software development lifecycle by 50% through parallel execution optimization',
+        'Implemented secure IAM-based authentication systems and cloud migration solutions using AWS CloudFormation, ECS, improving system reliability and security posture',
+        'Applied technical troubleshooting methodologies during cloud migrations, breaking down complex technical tasks to identify and resolve deployment issues systematically',
+        'Collaborated with global technologist teams to investigate 50+ incidents using observability tools, conducting root cause analysis and implementing automated solutions for issue prevention',
+        'Gained exposure to cloud technologies including AWS services, container orchestration, and infrastructure as code, supporting enterprise-scale application resiliency and security practices'
       ],
-      technologies: ['AWS', 'CI/CD', 'Docker', 'Jenkins', 'GitHub Actions', 'Infrastructure as Code', 'Monitoring']
+      technologies: ['AWS', 'CloudFormation', 'ECS', 'IAM', 'CI/CD', 'Container Orchestration', 'Infrastructure as Code', 'Observability Tools', 'Root Cause Analysis']
     }
   ];
 

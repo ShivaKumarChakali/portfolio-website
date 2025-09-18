@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Linkedin, Github, MapPin, Send, CheckCircle, Download } from 'lucide-react';
+import { Mail, Linkedin, Github, MapPin, Send, CheckCircle } from 'lucide-react';
 import emailjs from '@emailjs/browser';
 
 const Contact = () => {
@@ -140,7 +140,7 @@ const Contact = () => {
               variants={itemVariants}
               className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto"
             >
-              Let's discuss your next project or opportunity. I'm always open to new collaborations and interesting challenges.
+              Let's discuss full-time opportunities or collaborations. I'm currently seeking full-time software engineering roles.
             </motion.p>
           </motion.div>
         </div>
@@ -336,16 +336,15 @@ const Contact = () => {
                   Let's Connect
                 </h3>
                 <p className="text-gray-600 dark:text-gray-400 mb-4">
-                  I'm actively seeking opportunities in:
+                  I'm actively seeking full-time opportunities in:
                 </p>
                 <ul className="space-y-2 mb-6">
                   {[
-                    'Co-op positions in software engineering',
                     'Full-time software development roles',
                     'React and Node.js development opportunities',
                     'Data analytics and cloud engineering positions',
                     'AI/ML and DevOps engineering roles',
-                    'Graduate-level internships'
+                    'Platform and infrastructure engineering roles'
                   ].map((item, index) => (
                     <li key={index} className="flex items-center space-x-2">
                       <div className="w-2 h-2 bg-primary-600 dark:bg-primary-400 rounded-full"></div>
@@ -353,17 +352,7 @@ const Contact = () => {
                     </li>
                   ))}
                 </ul>
-                <div className="border-t border-gray-200 dark:border-dark-700 pt-4">
-                  <a
-                    href="https://drive.google.com/file/d/1kMm-sCnyCSIDkWTNvb5eu3PuQQZicigZ/view?usp=drive_link"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center space-x-2 text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 transition-colors"
-                  >
-                    <Download size={16} />
-                    <span>View Resume</span>
-                  </a>
-                </div>
+                
               </motion.div>
             </motion.div>
           </div>

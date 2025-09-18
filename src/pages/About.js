@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { GraduationCap, MapPin, Calendar, Mail, Linkedin, Download } from 'lucide-react';
+import { GraduationCap, MapPin, Calendar, Mail, Linkedin } from 'lucide-react';
 
 const About = () => {
   const containerVariants = {
@@ -106,36 +106,22 @@ const About = () => {
                     Current Status
                   </h3>
                   <p className="text-gray-600 dark:text-gray-400 mb-3">
-                    <strong>Graduate Student & Aspiring Software Engineer</strong>
+                    <strong>Graduate Student & Full-Stack Software Engineer</strong>
                   </p>
                   <p className="text-gray-600 dark:text-gray-400 mb-4">
-                    Currently pursuing M.S. in Computer Science at UNC Charlotte. Passionate about full-stack development, 
-                    cloud technologies, and building scalable applications. Actively seeking Co-op and Full-time opportunities 
-                    in software engineering and development roles.
+                    Pursuing M.S. in Computer Science at UNC Charlotte. Previously worked as a Full-Stack Software Engineer at LEZIT Transports (Aug 2024 – Jul 2025).
                   </p>
                   <div className="space-y-3">
                     <div className="flex items-center space-x-2">
-                      <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                      <span className="text-sm text-gray-600 dark:text-gray-400">Available for Co-op opportunities</span>
-                    </div>
-                    <div className="flex items-center space-x-2">
                       <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
-                      <span className="text-sm text-gray-600 dark:text-gray-400">Seeking Full-time positions</span>
+                      <span className="text-sm text-gray-600 dark:text-gray-400">Actively seeking Full-time software engineering roles</span>
                     </div>
                     <div className="flex items-center space-x-2">
                       <div className="w-2 h-2 bg-purple-500 rounded-full"></div>
                       <span className="text-sm text-gray-600 dark:text-gray-400">Open to remote and hybrid roles</span>
                     </div>
                   </div>
-                  <a
-                    href="https://drive.google.com/file/d/1kMm-sCnyCSIDkWTNvb5eu3PuQQZicigZ/view?usp=drive_link"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center space-x-2 text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 transition-colors mt-4"
-                  >
-                    <Download size={16} />
-                    <span>View Resume</span>
-                  </a>
+                  
                 </div>
               </motion.div>
             </motion.div>
@@ -214,10 +200,21 @@ const About = () => {
                   <div className="space-y-4">
                     <div className="border-l-4 border-primary-600 dark:border-primary-400 pl-4">
                       <h4 className="font-semibold text-gray-900 dark:text-gray-100">
+                        LEZIT Transports (Startup)
+                      </h4>
+                      <p className="text-gray-600 dark:text-gray-400">
+                        Full-Stack Software Engineer (Aug '24 – Jul '25)
+                      </p>
+                      <p className="text-sm text-gray-500 dark:text-gray-500">
+                        Built a real-time transportation booking platform using React, TypeScript, Node.js, Express, and MongoDB with secure auth (JWT/OAuth) and CI/CD.
+                      </p>
+                    </div>
+                    <div className="border-l-4 border-primary-600 dark:border-primary-400 pl-4">
+                      <h4 className="font-semibold text-gray-900 dark:text-gray-100">
                         Deloitte USI
                       </h4>
                       <p className="text-gray-600 dark:text-gray-400">
-                        React / Power BI Developer (Sep '23 – Jul '24)
+                        Analyst & Software Developer (Sep '23 – Jul '24)
                       </p>
                       <p className="text-sm text-gray-500 dark:text-gray-500">
                         Built React apps and Power BI dashboards with DAX, M, SQL Server, Azure Synapse, and APIs
@@ -228,7 +225,7 @@ const About = () => {
                         Amazon
                       </h4>
                       <p className="text-gray-600 dark:text-gray-400">
-                        Cloud Infrastructure DevOps Intern (Jan '23 – Jun '23)
+                        Cloud Infrastructure & DevOps Engineer Intern (Jan '23 – Jun '23)
                       </p>
                       <p className="text-sm text-gray-500 dark:text-gray-500">
                         Improved CI/CD, managed cloud infra, resolved deployment and security issues
