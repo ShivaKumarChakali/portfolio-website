@@ -140,7 +140,7 @@ const Contact = () => {
               variants={itemVariants}
               className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto"
             >
-              Let's discuss full-time opportunities or collaborations. I'm currently seeking full-time software engineering roles.
+              I'm actively seeking full-time software engineering opportunities. Let's connect and discuss how I can contribute to your team!
             </motion.p>
           </motion.div>
         </div>
@@ -336,15 +336,16 @@ const Contact = () => {
                   Let's Connect
                 </h3>
                 <p className="text-gray-600 dark:text-gray-400 mb-4">
-                  I'm actively seeking full-time opportunities in:
+                  I'm actively seeking full-time opportunities and available for immediate start. Open to roles in:
                 </p>
                 <ul className="space-y-2 mb-6">
                   {[
-                    'Full-time software development roles',
-                    'React and Node.js development opportunities',
-                    'Data analytics and cloud engineering positions',
-                    'AI/ML and DevOps engineering roles',
-                    'Platform and infrastructure engineering roles'
+                    'Full-stack software engineering (React, TypeScript, Node.js)',
+                    'Backend development and API design',
+                    'Cloud engineering and DevOps',
+                    'SaaS platform development',
+                    'Data engineering and analytics',
+                    'AI/ML engineering and integration'
                   ].map((item, index) => (
                     <li key={index} className="flex items-center space-x-2">
                       <div className="w-2 h-2 bg-primary-600 dark:bg-primary-400 rounded-full"></div>
@@ -379,8 +380,8 @@ const Contact = () => {
               variants={itemVariants}
               className="text-lg text-gray-600 dark:text-gray-400 mb-8 max-w-2xl mx-auto"
             >
-              Whether you have a Co-op opportunity, full-time position, or just want to discuss potential collaborations, 
-              I'd love to hear from you. Let's explore how we can work together.
+              Whether you have a full-time position, contract opportunity, or just want to discuss potential collaborations, 
+              I'd love to hear from you. I'm available for immediate start and ready to contribute to your team's success.
             </motion.p>
             <motion.div
               variants={itemVariants}

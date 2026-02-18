@@ -78,7 +78,7 @@ const Home = () => {
               variants={itemVariants}
               className="text-xl md:text-2xl text-gray-600 dark:text-gray-400 mb-8"
             >
-              Full-Stack Software Engineer & Graduate Student
+              Full-Stack Software Engineer & M.S. Graduate
             </motion.h2>
 
             {/* Description */}
@@ -86,7 +86,7 @@ const Home = () => {
               variants={itemVariants}
               className="text-lg text-gray-600 dark:text-gray-400 mb-12 max-w-2xl mx-auto leading-relaxed"
             >
-              Full-Stack Software Engineer pursuing an M.S. in Computer Science at UNC Charlotte. Previously at LEZIT Transports (Aug 2024 – Jul 2025). I build fast, accessible web apps with React and Node.js and ship to the cloud. Currently seeking full-time software engineering roles.
+              Full-Stack Software Engineer with an M.S. in Computer Science from UNC Charlotte. Previously at LEZIT Transports (Aug 2024 – Jul 2025). I build fast, accessible web apps with React, TypeScript, and Node.js and ship to the cloud. <strong className="text-primary-600 dark:text-primary-400">Actively seeking full-time software engineering opportunities.</strong>
             </motion.p>
 
             {/* CTA Buttons */}

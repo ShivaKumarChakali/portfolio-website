@@ -106,19 +106,23 @@ const About = () => {
                     Current Status
                   </h3>
                   <p className="text-gray-600 dark:text-gray-400 mb-3">
-                    <strong>Graduate Student & Full-Stack Software Engineer</strong>
+                    <strong>M.S. Graduate & Full-Stack Software Engineer</strong>
                   </p>
                   <p className="text-gray-600 dark:text-gray-400 mb-4">
-                    Pursuing M.S. in Computer Science at UNC Charlotte. Previously worked as a Full-Stack Software Engineer at LEZIT Transports (Aug 2024 – Jul 2025).
+                    Recently graduated with M.S. in Computer Science from UNC Charlotte. Previously worked as a Full-Stack Software Engineer at LEZIT Transports (Aug 2024 – Jul 2025).
                   </p>
                   <div className="space-y-3">
                     <div className="flex items-center space-x-2">
+                      <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                      <span className="text-sm font-semibold text-gray-900 dark:text-gray-100">Actively seeking Full-time software engineering roles</span>
+                    </div>
+                    <div className="flex items-center space-x-2">
                       <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
-                      <span className="text-sm text-gray-600 dark:text-gray-400">Actively seeking Full-time software engineering roles</span>
+                      <span className="text-sm text-gray-600 dark:text-gray-400">Open to remote, hybrid, and on-site opportunities</span>
                     </div>
                     <div className="flex items-center space-x-2">
                       <div className="w-2 h-2 bg-purple-500 rounded-full"></div>
-                      <span className="text-sm text-gray-600 dark:text-gray-400">Open to remote and hybrid roles</span>
+                      <span className="text-sm text-gray-600 dark:text-gray-400">Available for immediate start</span>
                     </div>
                   </div>
                   
@@ -156,7 +160,7 @@ const About = () => {
                       <div className="flex items-center space-x-4 text-sm text-gray-500 dark:text-gray-500">
                         <div className="flex items-center space-x-1">
                           <Calendar size={16} />
-                          <span>Aug '24 – Dec '25</span>
+                          <span>Aug '24 – Dec '25 (Graduated)</span>
                         </div>
                         <div className="flex items-center space-x-1">
                           <MapPin size={16} />
@@ -262,7 +266,7 @@ const About = () => {
                   Languages
                 </h3>
                 <p className="text-gray-600 dark:text-gray-400 text-sm">
-                  Python, Java, JavaScript, C++, SQL
+                  JavaScript, TypeScript, Python, Java, SQL, C++
                 </p>
               </div>
 
@@ -272,7 +276,7 @@ const About = () => {
                   Frameworks
                 </h3>
                 <p className="text-gray-600 dark:text-gray-400 text-sm">
-                  React, Angular, Node, Express, Flask
+                  React, Next.js, Node.js, Express, Angular, Tailwind CSS
                 </p>
               </div>
 
@@ -282,17 +286,17 @@ const About = () => {
                   Cloud/DevOps
                 </h3>
                 <p className="text-gray-600 dark:text-gray-400 text-sm">
-                  AWS, Docker, CI/CD, Jenkins, GitHub Actions
+                  AWS, Docker, CI/CD, GitHub Actions, Terraform, Jenkins
                 </p>
               </div>
 
               <div className="card p-6 text-center">
                 <div className="text-3xl mb-4">🛠️</div>
                 <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-2">
-                  Tools
+                  Databases & Tools
                 </h3>
                 <p className="text-gray-600 dark:text-gray-400 text-sm">
-                  Power BI, DAX, REST APIs, Git, MongoDB, MySQL, Agile
+                  PostgreSQL, MongoDB, MySQL, Redis, Power BI, REST APIs, Git
                 </p>
               </div>
             </motion.div>
@@ -316,13 +320,14 @@ const About = () => {
               <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
                 I'm passionate about leveraging technology to solve real-world problems and create meaningful impact. 
                 With a strong foundation in both frontend and backend development, I enjoy building full-stack applications 
-                that deliver exceptional user experiences. My experience at Deloitte and Amazon has taught me the importance 
+                that deliver exceptional user experiences. My experience at Deloitte, Amazon, and LEZIT Transports has taught me the importance 
                 of scalable architecture, clean code, and collaborative development practices.
               </p>
               <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed mt-4">
-                Currently pursuing my Master's in Computer Science at UNC Charlotte, I'm constantly learning and exploring 
-                new technologies to stay at the forefront of software development. I believe in writing code that's not just 
-                functional, but also maintainable, scalable, and user-friendly.
+                Recently graduated with my Master's in Computer Science from UNC Charlotte, I'm now actively seeking full-time opportunities 
+                where I can apply my skills in React, TypeScript, Node.js, and cloud technologies. I believe in writing code that's not just 
+                functional, but also maintainable, scalable, and user-friendly. I'm excited to contribute to innovative projects and continue 
+                growing as a software engineer.
               </p>
             </motion.div>
           </motion.div>

@@ -34,11 +34,11 @@ const Skills = () => {
       color: 'from-blue-500 to-blue-600',
       skills: [
         { name: 'JavaScript', level: 90, icon: '⚡' },
+        { name: 'TypeScript', level: 88, icon: '📘' },
         { name: 'Python', level: 85, icon: '🐍' },
         { name: 'Java', level: 80, icon: '☕' },
-        { name: 'C++', level: 75, icon: '⚙️' },
-        { name: 'SQL', level: 85, icon: '🗄️' },
-        { name: 'TypeScript', level: 85, icon: '📘' }
+        { name: 'SQL', level: 88, icon: '🗄️' },
+        { name: 'C++', level: 75, icon: '⚙️' }
       ]
     },
     {
@@ -47,12 +47,13 @@ const Skills = () => {
       icon: Globe,
       color: 'from-green-500 to-green-600',
       skills: [
-        { name: 'React', level: 90, icon: '⚛️' },
+        { name: 'React', level: 92, icon: '⚛️' },
+        { name: 'Next.js', level: 85, icon: '▲' },
+        { name: 'Node.js', level: 88, icon: '🟢' },
+        { name: 'Express.js', level: 88, icon: '🚂' },
+        { name: 'Tailwind CSS', level: 90, icon: '🎨' },
         { name: 'Angular', level: 80, icon: '🅰️' },
-        { name: 'Node.js', level: 85, icon: '🟢' },
-        { name: 'Express.js', level: 85, icon: '🚂' },
-        { name: 'Flask', level: 75, icon: '🍶' },
-        { name: 'Tailwind CSS', level: 90, icon: '🎨' }
+        { name: 'Flask', level: 75, icon: '🍶' }
       ]
     },
     {
@@ -75,12 +76,14 @@ const Skills = () => {
       icon: BarChart3,
       color: 'from-purple-500 to-purple-600',
       skills: [
+        { name: 'PostgreSQL', level: 88, icon: '🐘' },
+        { name: 'MongoDB', level: 85, icon: '🍃' },
+        { name: 'MySQL', level: 85, icon: '🐬' },
         { name: 'Power BI', level: 85, icon: '📊' },
         { name: 'DAX', level: 80, icon: '📈' },
         { name: 'M Query', level: 80, icon: '🔍' },
         { name: 'Azure Synapse', level: 75, icon: '🔗' },
-        { name: 'MongoDB', level: 80, icon: '🍃' },
-        { name: 'MySQL', level: 85, icon: '🐬' }
+        { name: 'Redis', level: 80, icon: '🔴' }
       ]
     },
     {
@@ -89,12 +92,14 @@ const Skills = () => {
       icon: Brain,
       color: 'from-pink-500 to-pink-600',
       skills: [
-        { name: 'TensorFlow', level: 75, icon: '🧠' },
-        { name: 'Reinforcement Learning', level: 80, icon: '🎯' },
-        { name: 'Deep Q-Network', level: 75, icon: '🕸️' },
-        { name: 'Federated Learning', level: 70, icon: '🌐' },
-        { name: 'NumPy', level: 85, icon: '🔢' },
-        { name: 'Pandas', level: 85, icon: '🐼' }
+        { name: 'TensorFlow', level: 78, icon: '🧠' },
+        { name: 'Reinforcement Learning', level: 82, icon: '🎯' },
+        { name: 'Deep Q-Network (DQN)', level: 78, icon: '🕸️' },
+        { name: 'Federated Learning', level: 75, icon: '🌐' },
+        { name: 'SUMO Simulation', level: 75, icon: '🚦' },
+        { name: 'NumPy', level: 88, icon: '🔢' },
+        { name: 'Pandas', level: 88, icon: '🐼' },
+        { name: 'Scikit-learn', level: 75, icon: '🔬' }
       ]
     },
     {
@@ -103,12 +108,13 @@ const Skills = () => {
       icon: Zap,
       color: 'from-yellow-500 to-yellow-600',
       skills: [
-        { name: 'Git', level: 90, icon: '📝' },
-        { name: 'REST APIs', level: 85, icon: '🔌' },
-        { name: 'Agile', level: 85, icon: '🔄' },
-        { name: 'JWT', level: 80, icon: '🔐' },
-        { name: 'OAuth', level: 75, icon: '🔑' },
-        { name: 'Nodemailer', level: 80, icon: '📧' }
+        { name: 'Git', level: 92, icon: '📝' },
+        { name: 'REST APIs', level: 88, icon: '🔌' },
+        { name: 'GraphQL', level: 70, icon: '📡' },
+        { name: 'JWT', level: 85, icon: '🔐' },
+        { name: 'OAuth', level: 78, icon: '🔑' },
+        { name: 'Agile/Scrum', level: 88, icon: '🔄' },
+        { name: 'Postman', level: 85, icon: '📬' }
       ]
     }
   ];
@@ -392,7 +398,7 @@ const Skills = () => {
                     Currently Learning
                   </h3>
                   <div className="space-y-3">
-                    {['GraphQL', 'Next.js', 'Docker Swarm', 'Kubernetes', 'Machine Learning', 'Blockchain'].map((skill) => (
+                    {['Kubernetes', 'Microservices Architecture', 'Advanced React Patterns', 'System Design', 'Performance Optimization', 'Cloud-Native Development'].map((skill) => (
                       <div key={skill} className="flex items-center space-x-3">
                         <div className="w-2 h-2 bg-primary-600 dark:bg-primary-400 rounded-full"></div>
                         <span className="text-gray-600 dark:text-gray-400">{skill}</span>
@@ -407,10 +413,10 @@ const Skills = () => {
                   </h3>
                   <div className="space-y-3">
                     {[
-                      'Advanced React patterns and performance optimization',
-                      'Microservices architecture and design patterns',
-                      'Advanced cloud-native development',
-                      'AI/ML integration in web applications'
+                      'Building scalable SaaS platforms and enterprise applications',
+                      'Contributing to high-impact software engineering teams',
+                      'Applying advanced system design and architecture patterns',
+                      'Integrating AI/ML capabilities into production applications'
                     ].map((goal) => (
                       <div key={goal} className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-green-600 dark:bg-green-400 rounded-full mt-2"></div>
