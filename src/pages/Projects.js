@@ -30,44 +30,242 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: 'Smart Traffic Lights with Reinforcement Learning',
-      description: 'An innovative traffic management system using federated Deep Q-Network (DQN) agents in SUMO simulation environment. Achieved a remarkable 99.8% reduction in average wait times.',
-      longDescription: 'This research project implements a federated reinforcement learning approach for traffic signal optimization. Using SUMO (Simulation of Urban MObility) as the simulation environment, the system employs multiple DQN agents that learn optimal traffic signal timing strategies. The federated approach allows for distributed learning while maintaining privacy and improving overall system performance.',
-      image: 'https://images.unsplash.com/photo-1545459720-aac8509eb02c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80',
-      category: 'ai-ml',
-      technologies: ['Python', 'TensorFlow', 'SUMO', 'Reinforcement Learning', 'DQN', 'Federated Learning', 'NumPy', 'Pandas'],
+      title: 'Stock Fantasy Simulator',
+      description: 'A full-stack web application that simulates stock trading in a gamified environment. Built with React, TypeScript, Node.js, and PostgreSQL.',
+      longDescription: 'A full-stack web application that simulates stock trading in a gamified environment. Built with React, TypeScript, Node.js, and PostgreSQL. Designed transaction-safe backend logic for buy/sell operations, optimized database queries for performance, and implemented REST APIs for real-time portfolio updates. Deployed with CI/CD pipelines in a cloud environment.',
+      image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
+      category: 'saas',
+      technologies: ['React', 'TypeScript', 'Node.js', 'PostgreSQL', 'REST APIs'],
       liveUrl: null,
-      githubUrl: 'https://github.com/ChakaliShivaKumar/Smart-Traffic-Lights',
+      githubUrl: null,
+      featured: true,
       features: [
-        'Federated Deep Q-Network implementation',
-        'SUMO traffic simulation integration',
-        '99.8% reduction in average wait times',
-        'Distributed learning architecture',
-        'Real-time traffic signal optimization',
-        'Performance analytics and visualization'
+        'Transaction-safe backend logic for buy/sell operations',
+        'Optimized database queries for performance',
+        'REST APIs for real-time portfolio updates',
+        'Gamified trading simulation environment',
+        'Deployed with CI/CD pipelines',
+        'Cloud-based deployment'
       ]
     },
     {
       id: 2,
-      title: 'Power BI Analytics Dashboard',
-      description: 'Comprehensive business intelligence dashboard built with Power BI, featuring advanced DAX calculations, M query transformations, and Azure Synapse integration for real-time data processing.',
-      longDescription: 'Developed during my time at Deloitte, this Power BI dashboard provides comprehensive business analytics with advanced DAX calculations and M query transformations. The solution integrates with Azure Synapse for real-time data processing and includes automated refresh capabilities. The dashboard features interactive visualizations, drill-down capabilities, and mobile-responsive design.',
-      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80',
-      category: 'data',
-      technologies: ['Power BI', 'DAX', 'M Query', 'Azure Synapse', 'SQL Server', 'Data Modeling', 'ETL Processes'],
+      title: 'MenuVerse3D / Tech-Menu',
+      description: 'A SaaS platform enabling restaurants to showcase interactive 3D menus. Built with Next.js, React, and Tailwind CSS.',
+      longDescription: 'A SaaS platform enabling restaurants to showcase interactive 3D menus. Built with Next.js, React, and Tailwind CSS. Integrated AI-powered 3D generation APIs and dynamic content workflows. Focused on performance optimization, SEO, and responsive UI to deliver a production-ready marketing and ordering experience.',
+      image: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
+      category: 'saas',
+      technologies: ['Next.js', 'React', 'Tailwind CSS', 'AI APIs', '3D Generation'],
       liveUrl: null,
       githubUrl: null,
+      featured: true,
       features: [
-        'Advanced DAX calculations and measures',
-        'M query data transformations',
-        'Azure Synapse integration',
-        'Automated data refresh pipelines',
-        'Interactive visualizations',
-        'Mobile-responsive design'
+        'AI-powered 3D generation APIs',
+        'Dynamic content workflows',
+        'Performance optimization',
+        'SEO optimization',
+        'Responsive UI design',
+        'Production-ready marketing and ordering experience'
       ]
     },
     {
       id: 3,
+      title: 'CampusCycle',
+      description: 'A student marketplace platform for buying, selling, and exchanging items. Developed using React and Node.js with PostgreSQL.',
+      longDescription: 'A student marketplace platform for buying, selling, and exchanging items. Developed using React and Node.js with PostgreSQL. Designed modular frontend components, built REST APIs for listings and messaging, and optimized data retrieval for scalable performance. Deployed with automated CI/CD workflows.',
+      image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
+      category: 'fullstack',
+      technologies: ['React', 'Node.js', 'PostgreSQL', 'REST APIs'],
+      liveUrl: null,
+      githubUrl: null,
+      featured: false,
+      features: [
+        'Modular frontend components',
+        'REST APIs for listings and messaging',
+        'Optimized data retrieval for scalable performance',
+        'Automated CI/CD workflows',
+        'Student-focused marketplace platform'
+      ]
+    },
+    {
+      id: 4,
+      title: 'Rainfall Prediction & Data Analysis',
+      description: 'Developed predictive models using Python, Pandas, and SQL to analyze historical weather datasets.',
+      longDescription: 'Developed predictive models using Python, Pandas, and SQL to analyze historical weather datasets. Performed statistical analysis and feature engineering, visualized results using Matplotlib, and evaluated model performance to extract actionable insights.',
+      image: 'https://images.unsplash.com/photo-1534088568595-a066f410bcda?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
+      category: 'ai-ml',
+      technologies: ['Python', 'Pandas', 'SQL', 'Matplotlib', 'Statistical Analysis'],
+      liveUrl: null,
+      githubUrl: null,
+      featured: false,
+      features: [
+        'Predictive modeling for rainfall',
+        'Statistical analysis and feature engineering',
+        'Data visualization with Matplotlib',
+        'Model performance evaluation',
+        'Actionable insights extraction'
+      ]
+    },
+    {
+      id: 5,
+      title: 'Power BI Business Dashboard Project',
+      description: 'Built interactive business intelligence dashboards using Power BI and SQL Server.',
+      longDescription: 'Built interactive business intelligence dashboards using Power BI and SQL Server. Designed complex queries and optimized ETL-style data transformations. Delivered KPI visualizations and automated reporting workflows to improve operational decision-making.',
+      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80',
+      category: 'data',
+      technologies: ['SQL', 'Power BI', 'ETL', 'Data Visualization'],
+      liveUrl: null,
+      githubUrl: null,
+      featured: false,
+      features: [
+        'Complex SQL query design',
+        'Optimized ETL-style data transformations',
+        'KPI visualizations',
+        'Automated reporting workflows',
+        'Enterprise reporting dashboards',
+        'Improved operational decision-making'
+      ]
+    },
+    {
+      id: 6,
+      title: 'Smart Traffic Lights with Federated Reinforcement Learning',
+      description: 'Designed a reinforcement learning system to optimize traffic signal timing using SUMO simulations and TensorFlow (DQN).',
+      longDescription: 'Designed a reinforcement learning system to optimize traffic signal timing using SUMO simulations and TensorFlow (DQN). Implemented federated learning concepts to simulate distributed traffic nodes, improving overall traffic flow efficiency in modeled environments. Achieved a remarkable 99.8% reduction in average wait times.',
+      image: 'https://images.unsplash.com/photo-1545459720-aac8509eb02c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80',
+      category: 'ai-ml',
+      technologies: ['SUMO', 'TensorFlow', 'DQN', 'Reinforcement Learning', 'Python'],
+      liveUrl: null,
+      githubUrl: 'https://github.com/ChakaliShivaKumar/Smart-Traffic-Lights',
+      featured: true,
+      features: [
+        'Federated reinforcement learning implementation',
+        'SUMO traffic simulation integration',
+        'TensorFlow DQN agents',
+        'Distributed traffic node simulation',
+        '99.8% reduction in average wait times',
+        'Traffic flow efficiency optimization'
+      ]
+    },
+    {
+      id: 7,
+      title: 'Distributed Log Aggregator / Monitoring Tool',
+      description: 'Built a high-throughput log ingestion and monitoring system using Node.js and Redis.',
+      longDescription: 'Built a high-throughput log ingestion and monitoring system using Node.js and Redis. Implemented parallel processing for large-scale log streams and created dashboards to visualize latency and error metrics. Containerized services and deployed in a cloud environment.',
+      image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
+      category: 'infrastructure',
+      technologies: ['Node.js', 'Redis', 'Docker', 'Monitoring', 'Log Aggregation'],
+      liveUrl: null,
+      githubUrl: null,
+      featured: false,
+      features: [
+        'High-throughput log ingestion',
+        'Parallel processing for large-scale log streams',
+        'Latency and error metrics dashboards',
+        'Containerized services',
+        'Cloud deployment',
+        'Real-time monitoring capabilities'
+      ]
+    },
+    {
+      id: 8,
+      title: 'Cloud Automation Scripts (AWS)',
+      description: 'Developed Python-based automation tools to streamline infrastructure provisioning and deployment workflows.',
+      longDescription: 'Developed Python-based automation tools to streamline infrastructure provisioning and deployment workflows. Integrated with AWS services, improving reliability and reducing manual operational overhead.',
+      image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80',
+      category: 'infrastructure',
+      technologies: ['Python', 'AWS', 'Automation', 'Infrastructure as Code'],
+      liveUrl: null,
+      githubUrl: null,
+      featured: false,
+      features: [
+        'Infrastructure provisioning automation',
+        'Deployment workflow automation',
+        'AWS service integration',
+        'Improved reliability',
+        'Reduced manual operational overhead'
+      ]
+    },
+    {
+      id: 9,
+      title: 'CI/CD Pipeline Implementations',
+      description: 'Designed and implemented CI/CD workflows using GitHub Actions and Docker.',
+      longDescription: 'Designed and implemented CI/CD workflows using GitHub Actions and Docker. Automated build, test, and deployment processes to ensure reliable and consistent releases across environments.',
+      image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
+      category: 'devops',
+      technologies: ['GitHub Actions', 'Docker', 'CI/CD', 'Automation'],
+      liveUrl: null,
+      githubUrl: null,
+      featured: false,
+      features: [
+        'Automated build processes',
+        'Automated testing workflows',
+        'Automated deployment processes',
+        'Containerized production deployments',
+        'Reliable and consistent releases',
+        'Multi-environment support'
+      ]
+    },
+    {
+      id: 10,
+      title: 'Personal Portfolio (skchakali.onrender.com)',
+      description: 'Designed and deployed a production-ready portfolio site using React/Next.js.',
+      longDescription: 'Designed and deployed a production-ready portfolio site using React/Next.js. Optimized performance, implemented responsive design, and integrated cloud hosting for reliability and scalability.',
+      image: 'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
+      category: 'web',
+      technologies: ['Next.js', 'TypeScript', 'Tailwind', 'React'],
+      liveUrl: 'https://skchakali.onrender.com',
+      githubUrl: null,
+      featured: false,
+      features: [
+        'Production-ready deployment',
+        'Performance optimization',
+        'Responsive design',
+        'Cloud hosting integration',
+        'Reliability and scalability'
+      ]
+    },
+    {
+      id: 11,
+      title: 'NinerConnect',
+      description: 'Built a founder-investor matchmaking platform to connect startups with potential investors.',
+      longDescription: 'Built a founder-investor matchmaking platform to connect startups with potential investors. Designed REST APIs, authentication flows, and scalable database schema to support user onboarding and matching logic.',
+      image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
+      category: 'platform',
+      technologies: ['React', 'Node.js', 'PostgreSQL', 'REST APIs', 'Authentication'],
+      liveUrl: null,
+      githubUrl: null,
+      featured: false,
+      features: [
+        'Founder-investor matchmaking',
+        'REST API design',
+        'Authentication flows',
+        'Scalable database schema',
+        'User onboarding system',
+        'Matching logic implementation'
+      ]
+    },
+    {
+      id: 12,
+      title: 'Capita',
+      description: 'Developed a marketplace-style web platform connecting founders and investors.',
+      longDescription: 'Developed a marketplace-style web platform connecting founders and investors. Implemented modular frontend architecture, backend APIs, and secure authentication. Focused on scalable database structure and maintainable system design.',
+      image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
+      category: 'platform',
+      technologies: ['React', 'Node.js', 'PostgreSQL', 'REST APIs', 'Authentication'],
+      liveUrl: null,
+      githubUrl: null,
+      featured: false,
+      features: [
+        'Marketplace-style platform',
+        'Modular frontend architecture',
+        'Backend API implementation',
+        'Secure authentication',
+        'Scalable database structure',
+        'Maintainable system design'
+      ]
+    },
+    {
+      id: 13,
       title: 'BookMyEvent (BME)',
       description: 'College capstone project using MERN-style architecture with AWS services to manage event scheduling, ticket booking, and calendar viewing with a responsive React.js frontend and secure Node.js/Express.js backend.',
       longDescription: 'BookMyEvent (BME) is a comprehensive event management platform developed as a college capstone project. The application uses MERN-style architecture with AWS services for scalable, low-latency data storage. Features include role-based authentication with JWT, QR Code generation for digital tickets, real-time availability checks, and a responsive design for both mobile and desktop users.',
@@ -76,6 +274,7 @@ const Projects = () => {
       technologies: ['React.js', 'Node.js', 'Express.js', 'AWS DynamoDB', 'JWT', 'QR Code Generation', 'RESTful APIs', 'MongoDB'],
       liveUrl: null,
       githubUrl: 'https://github.com/ChakaliShivaKumar/BookMyEvent',
+      featured: false,
       features: [
         'Event scheduling and ticket booking system',
         'Role-based authentication with JWT',
@@ -86,7 +285,7 @@ const Projects = () => {
       ]
     },
     {
-      id: 4,
+      id: 14,
       title: 'AWS Infrastructure Automation',
       description: 'DevOps project focused on automating AWS infrastructure deployment using Infrastructure as Code (IaC) principles and CI/CD pipelines.',
       longDescription: 'Developed during my internship at Amazon, this project implements Infrastructure as Code using AWS CloudFormation and Terraform. The solution includes automated CI/CD pipelines with Jenkins and GitHub Actions, containerization with Docker, and comprehensive monitoring and logging solutions.',
@@ -95,6 +294,7 @@ const Projects = () => {
       technologies: ['AWS', 'Terraform', 'Docker', 'Jenkins', 'GitHub Actions', 'CloudFormation', 'Monitoring'],
       liveUrl: null,
       githubUrl: 'https://github.com/ChakaliShivaKumar/AWS-Infrastructure',
+      featured: false,
       features: [
         'Infrastructure as Code implementation',
         'Automated CI/CD pipelines',
@@ -236,116 +436,112 @@ const Projects = () => {
         </div>
       </section>
 
-      {/* Featured Project Details */}
-      <section className="section-padding bg-gray-50 dark:bg-dark-800">
-        <div className="container-custom">
-          <motion.div
-            variants={containerVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className="text-center mb-12"
-          >
-            <motion.h2
-              variants={itemVariants}
-              className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-4"
+      {/* Featured Projects Section */}
+      {projects.filter(p => p.featured).length > 0 && (
+        <section className="section-padding bg-gray-50 dark:bg-dark-800">
+          <div className="container-custom">
+            <motion.div
+              variants={containerVariants}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              className="text-center mb-12"
             >
-              Featured Project: Smart Traffic Lights with Reinforcement Learning
-            </motion.h2>
-            <motion.p
-              variants={itemVariants}
-              className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto"
-            >
-              An innovative AI-powered traffic management system achieving 99.8% reduction in wait times
-            </motion.p>
-          </motion.div>
+              <motion.h2
+                variants={itemVariants}
+                className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-4"
+              >
+                Featured Projects
+              </motion.h2>
+              <motion.p
+                variants={itemVariants}
+                className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto"
+              >
+                Highlighted projects showcasing innovative solutions and technical excellence
+              </motion.p>
+            </motion.div>
 
-          <motion.div
-            variants={itemVariants}
-            className="max-w-4xl mx-auto"
-          >
-            <div className="card p-8">
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                <div>
-                  <h3 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4">
-                    Project Overview
-                  </h3>
-                  <p className="text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
-                    This research project implements a federated reinforcement learning approach for traffic signal optimization. 
-                    Using SUMO (Simulation of Urban MObility) as the simulation environment, the system employs multiple DQN agents 
-                    that learn optimal traffic signal timing strategies. The federated approach allows for distributed learning 
-                    while maintaining privacy and improving overall system performance.
-                  </p>
-                  
-                  <div className="space-y-4">
-                    <h4 className="text-lg font-semibold text-gray-900 dark:text-gray-100">
-                      Key Features:
-                    </h4>
-                    <ul className="space-y-2">
-                      {projects[0].features.map((feature, idx) => (
-                        <li key={idx} className="flex items-start space-x-2">
-                          <span className="text-primary-600 dark:text-primary-400 mt-1">•</span>
-                          <span className="text-gray-600 dark:text-gray-400">{feature}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
+            <div className="space-y-12">
+              {projects.filter(p => p.featured).map((project, index) => (
+                <motion.div
+                  key={project.id}
+                  variants={itemVariants}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.2 }}
+                  className="max-w-4xl mx-auto"
+                >
+                  <div className="card p-8">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                      <div>
+                        <h3 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4">
+                          {project.title}
+                        </h3>
+                        <p className="text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
+                          {project.longDescription}
+                        </p>
+                        
+                        <div className="space-y-4">
+                          <h4 className="text-lg font-semibold text-gray-900 dark:text-gray-100">
+                            Key Features:
+                          </h4>
+                          <ul className="space-y-2">
+                            {project.features.map((feature, idx) => (
+                              <li key={idx} className="flex items-start space-x-2">
+                                <span className="text-primary-600 dark:text-primary-400 mt-1">•</span>
+                                <span className="text-gray-600 dark:text-gray-400">{feature}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      </div>
 
-                <div>
-                  <h3 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4">
-                    Technology Stack
-                  </h3>
-                  <div className="space-y-4">
-                    <div>
-                      <h4 className="font-semibold text-gray-900 dark:text-gray-100 mb-2">AI/ML</h4>
-                      <div className="flex flex-wrap gap-2">
-                        {['Python', 'TensorFlow', 'Reinforcement Learning', 'DQN'].map((tech) => (
-                          <span key={tech} className="px-3 py-1 bg-blue-100 dark:bg-blue-900/20 text-blue-700 dark:text-blue-300 rounded-full text-sm">
-                            {tech}
-                          </span>
-                        ))}
+                      <div>
+                        <h3 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4">
+                          Technology Stack
+                        </h3>
+                        <div className="flex flex-wrap gap-2 mb-6">
+                          {project.technologies.map((tech) => (
+                            <span key={tech} className="px-3 py-1 bg-primary-100 dark:bg-primary-900/20 text-primary-700 dark:text-primary-300 rounded-full text-sm">
+                              {tech}
+                            </span>
+                          ))}
+                        </div>
+
+                        <div className="flex flex-wrap gap-3 mt-6">
+                          {project.liveUrl && (
+                            <a
+                              href={project.liveUrl}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="btn-primary inline-flex items-center space-x-2"
+                            >
+                              <Globe size={20} />
+                              <span>View Live</span>
+                            </a>
+                          )}
+                          {project.githubUrl && (
+                            <a
+                              href={project.githubUrl}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="btn-secondary inline-flex items-center space-x-2"
+                            >
+                              <Github size={20} />
+                              <span>View Code</span>
+                            </a>
+                          )}
+                        </div>
                       </div>
                     </div>
-                    <div>
-                      <h4 className="font-semibold text-gray-900 dark:text-gray-100 mb-2">Simulation</h4>
-                      <div className="flex flex-wrap gap-2">
-                        {['SUMO', 'Federated Learning', 'NumPy', 'Pandas'].map((tech) => (
-                          <span key={tech} className="px-3 py-1 bg-green-100 dark:bg-green-900/20 text-green-700 dark:text-green-300 rounded-full text-sm">
-                            {tech}
-                          </span>
-                        ))}
-                      </div>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-gray-900 dark:text-gray-100 mb-2">Performance</h4>
-                      <div className="flex flex-wrap gap-2">
-                        {['99.8% Wait Time Reduction', 'Real-time Optimization', 'Distributed Learning'].map((tech) => (
-                          <span key={tech} className="px-3 py-1 bg-purple-100 dark:bg-purple-900/20 text-purple-700 dark:text-purple-300 rounded-full text-sm">
-                            {tech}
-                          </span>
-                        ))}
-                      </div>
-                    </div>
                   </div>
-
-                  <div className="mt-6">
-                    <a
-                      href="https://github.com/ChakaliShivaKumar/Smart-Traffic-Lights"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="btn-primary inline-flex items-center space-x-2"
-                    >
-                      <span>View Code</span>
-                      <ExternalLink size={20} />
-                    </a>
-                  </div>
-                </div>
-              </div>
+                </motion.div>
+              ))}
             </div>
-          </motion.div>
-        </div>
-      </section>
+          </div>
+        </section>
+      )}
 
       {/* Project Details Modal */}
       <AnimatePresence>
