@@ -33,6 +33,7 @@ const Experience = () => {
       icon: Code,
       color: 'from-orange-500 to-orange-600',
       achievements: [
+        'Received an accolade award from senior leadership for exceptional performance and impact on critical services',
         'Developed backend services using Java and Spring Boot to support scalable internal APIs and service integrations across distributed systems',
         'Designed and implemented RESTful microservices enabling reliable, fault-tolerant communication between services',
         'Worked with AWS services including EC2, S3, and IAM to support deployments and improve infrastructure reliability',
@@ -311,36 +312,7 @@ const Experience = () => {
               </div>
             </div>
 
-            <div className="card p-8">
-              <div className="flex items-start space-x-6">
-                <div className="p-4 bg-green-100 dark:bg-green-900/20 rounded-lg">
-                  <Building size={24} className="text-green-600 dark:text-green-400" />
-                </div>
-                <div className="flex-1">
-                  <h3 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-2">
-                    Bachelor of Engineering
-                  </h3>
-                  <h4 className="text-xl font-semibold text-green-600 dark:text-green-400 mb-4">
-                    Chaitanya Bharathi Institute of Technology
-                  </h4>
-                  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between space-y-2 sm:space-y-0">
-                    <div className="flex items-center space-x-2 text-gray-600 dark:text-gray-400">
-                      <Calendar size={16} />
-                      <span>2019 – 2023</span>
-                    </div>
-                    <div className="flex items-center space-x-2 text-gray-600 dark:text-gray-400">
-                      <MapPin size={16} />
-                      <span>Hyderabad, Telangana, India</span>
-                    </div>
-                  </div>
-                  <p className="text-gray-600 dark:text-gray-400 mt-4">
-                    Completed my undergraduate degree in Engineering, building a strong foundation in 
-                    computer science fundamentals, programming, and problem-solving skills. This period 
-                    laid the groundwork for my technical expertise and passion for software development.
-                  </p>
-                </div>
-              </div>
-            </div>
+            {/* Removed Bachelor of Engineering card as requested */}
           </motion.div>
         </div>
       </section>

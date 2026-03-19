@@ -18,12 +18,12 @@ const Footer = () => {
     },
     {
       name: 'LinkedIn',
-      url: 'https://www.linkedin.com/in/shiva-kumar-chakali',
+      url: 'https://www.linkedin.com/in/shiva-k-chakali/',
       icon: Linkedin,
     },
     {
       name: 'GitHub',
-      url: 'https://github.com/ChakaliShivaKumar',
+      url: 'https://github.com/ShivaKumarChakali',
       icon: Github,
     },
   ];
@@ -116,7 +116,14 @@ const Footer = () => {
             © {currentYear} Shiva Kumar Chakali.
           </p>
           <p className="text-gray-600 dark:text-gray-400 text-sm">
-            
+            <a
+              href="https://drive.google.com/file/d/1tu8MvFi9sNwUzxIjiu-U-7iwVvqtqHLg/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-primary-600 dark:hover:text-primary-400 underline underline-offset-2"
+            >
+              View Resume
+            </a>
           </p>
         </div>
       </div>

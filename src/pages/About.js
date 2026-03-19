@@ -84,12 +84,12 @@ const About = () => {
                     <div className="flex items-center space-x-3">
                       <Linkedin size={20} className="text-primary-600 dark:text-primary-400" />
                       <a
-                        href="https://www.linkedin.com/in/shiva-kumar-chakali"
+                        href="https://www.linkedin.com/in/shiva-k-chakali/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
                       >
-                        linkedin.com/in/shiva-kumar-chakali
+                        linkedin.com/in/shiva-k-chakali
                       </a>
                     </div>
                     <div className="flex items-center space-x-3">
@@ -172,31 +172,7 @@ const About = () => {
                   </div>
                 </div>
 
-                <div className="card p-6">
-                  <div className="flex items-start space-x-4">
-                    <div className="p-3 bg-green-100 dark:bg-green-900/20 rounded-lg">
-                      <GraduationCap size={24} className="text-green-600 dark:text-green-400" />
-                    </div>
-                    <div className="flex-1">
-                      <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-2">
-                        Bachelor of Engineering
-                      </h3>
-                      <p className="text-gray-600 dark:text-gray-400 mb-2">
-                        Chaitanya Bharathi Institute of Technology
-                      </p>
-                      <div className="flex items-center space-x-4 text-sm text-gray-500 dark:text-gray-500">
-                        <div className="flex items-center space-x-1">
-                          <Calendar size={16} />
-                          <span>2019 – 2023</span>
-                        </div>
-                        <div className="flex items-center space-x-1">
-                          <MapPin size={16} />
-                          <span>Hyderabad, Telangana, India</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                {/* Removed Bachelor of Engineering section as requested */}
 
                 <div className="card p-6">
                   <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-4">

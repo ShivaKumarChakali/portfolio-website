@@ -99,15 +99,15 @@ const Contact = () => {
     {
       icon: Linkedin,
       title: 'LinkedIn',
-      value: 'linkedin.com/in/shiva-kumar-chakali',
-      link: 'https://www.linkedin.com/in/shiva-kumar-chakali',
+      value: 'linkedin.com/in/shiva-k-chakali',
+      link: 'https://www.linkedin.com/in/shiva-k-chakali/',
       color: 'from-blue-600 to-blue-700'
     },
     {
       icon: Github,
       title: 'GitHub',
-      value: 'github.com/ChakaliShivaKumar',
-      link: 'https://github.com/ChakaliShivaKumar',
+      value: 'github.com/ShivaKumarChakali',
+      link: 'https://github.com/ShivaKumarChakali',
       color: 'from-gray-600 to-gray-700'
     },
     {
@@ -395,7 +395,7 @@ const Contact = () => {
                 <span>Send Email</span>
               </a>
               <a
-                href="https://www.linkedin.com/in/shiva-kumar-chakali"
+                href="https://www.linkedin.com/in/shiva-k-chakali/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-secondary inline-flex items-center space-x-2"

@@ -118,7 +118,7 @@ const Home = () => {
               className="flex justify-center space-x-6 mt-12"
             >
               <a
-                href="https://www.linkedin.com/in/shiva-kumar-chakali"
+                href="https://www.linkedin.com/in/shiva-k-chakali/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 rounded-full bg-white dark:bg-dark-800 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
@@ -183,6 +183,13 @@ const Home = () => {
               viewport={{ once: true }}
               className="card p-6 relative overflow-hidden"
             >
+              {/* Accolade Badge */}
+              <div className="absolute top-4 right-4">
+                <div className="bg-gradient-to-r from-yellow-400 to-orange-500 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg">
+                  🏆 Accolade Award
+                </div>
+              </div>
+
               <div className="flex items-start space-x-4">
                 <div className="p-3 bg-white dark:bg-gray-800 rounded-lg shadow-sm">
                   <img 
