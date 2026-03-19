@@ -106,10 +106,11 @@ const About = () => {
                     Current Status
                   </h3>
                   <p className="text-gray-600 dark:text-gray-400 mb-3">
-                    <strong>M.S. Graduate & Full-Stack Software Engineer</strong>
+                    <strong>M.S. Computer Science Student & Software Engineer</strong>
                   </p>
                   <p className="text-gray-600 dark:text-gray-400 mb-4">
-                    Recently graduated with M.S. in Computer Science from UNC Charlotte. Previously worked as a Full-Stack Software Engineer at LEZIT Transports (Aug 2024 – Jul 2025).
+                    Graduate student in Computer Science at UNC Charlotte with professional experience as a Software
+                    Development Engineer I at Amazon and Analyst – Python Developer at Deloitte.
                   </p>
                   <div className="space-y-3">
                     <div className="flex items-center space-x-2">
@@ -204,35 +205,26 @@ const About = () => {
                   <div className="space-y-4">
                     <div className="border-l-4 border-primary-600 dark:border-primary-400 pl-4">
                       <h4 className="font-semibold text-gray-900 dark:text-gray-100">
-                        LEZIT Transports (Startup)
-                      </h4>
-                      <p className="text-gray-600 dark:text-gray-400">
-                        Full-Stack Software Engineer (Aug '24 – Jul '25)
-                      </p>
-                      <p className="text-sm text-gray-500 dark:text-gray-500">
-                        Built a real-time transportation booking platform using React, TypeScript, Node.js, Express, and MongoDB with secure auth (JWT/OAuth) and CI/CD.
-                      </p>
-                    </div>
-                    <div className="border-l-4 border-primary-600 dark:border-primary-400 pl-4">
-                      <h4 className="font-semibold text-gray-900 dark:text-gray-100">
-                        Deloitte USI
-                      </h4>
-                      <p className="text-gray-600 dark:text-gray-400">
-                        Analyst & Software Developer (Sep '23 – Jul '24)
-                      </p>
-                      <p className="text-sm text-gray-500 dark:text-gray-500">
-                        Built React apps and Power BI dashboards with DAX, M, SQL Server, Azure Synapse, and APIs
-                      </p>
-                    </div>
-                    <div className="border-l-4 border-primary-600 dark:border-primary-400 pl-4">
-                      <h4 className="font-semibold text-gray-900 dark:text-gray-100">
                         Amazon
                       </h4>
                       <p className="text-gray-600 dark:text-gray-400">
-                        Cloud Infrastructure & DevOps Engineer Intern (Jan '23 – Jun '23)
+                        Software Development Engineer I (Jan '23 – Jul '24)
                       </p>
                       <p className="text-sm text-gray-500 dark:text-gray-500">
-                        Improved CI/CD, managed cloud infra, resolved deployment and security issues
+                        Developed backend services and RESTful microservices using Java and Spring Boot, working across
+                        distributed systems and AWS (EC2, S3, IAM). Automated monitoring and reporting with Python and SQL.
+                      </p>
+                    </div>
+                    <div className="border-l-4 border-primary-600 dark:border-primary-400 pl-4">
+                      <h4 className="font-semibold text-gray-900 dark:text-gray-100">
+                        Deloitte
+                      </h4>
+                      <p className="text-gray-600 dark:text-gray-400">
+                        Analyst – Python Developer (Jun '21 – Dec '22)
+                      </p>
+                      <p className="text-sm text-gray-500 dark:text-gray-500">
+                        Built backend services in Python (Django), data processing pipelines with Pandas and NumPy, and
+                        optimized SQL/PLSQL queries on Oracle 12c for reporting and analytics.
                       </p>
                     </div>
                   </div>
@@ -319,8 +311,8 @@ const About = () => {
               </h2>
               <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
                 I'm passionate about leveraging technology to solve real-world problems and create meaningful impact. 
-                With a strong foundation in both frontend and backend development, I enjoy building full-stack applications 
-                that deliver exceptional user experiences. My experience at Deloitte, Amazon, and LEZIT Transports has taught me the importance 
+                With a strong foundation in backend services, data processing, and cloud infrastructure, I enjoy building 
+                systems that are reliable, observable, and scalable. My experience at Amazon and Deloitte has taught me the importance 
                 of scalable architecture, clean code, and collaborative development practices.
               </p>
               <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed mt-4">

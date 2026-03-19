@@ -78,7 +78,7 @@ const Home = () => {
               variants={itemVariants}
               className="text-xl md:text-2xl text-gray-600 dark:text-gray-400 mb-8"
             >
-              Full-Stack Software Engineer & M.S. Graduate
+              Software Engineer & M.S. Computer Science Student
             </motion.h2>
 
             {/* Description */}
@@ -86,7 +86,7 @@ const Home = () => {
               variants={itemVariants}
               className="text-lg text-gray-600 dark:text-gray-400 mb-12 max-w-2xl mx-auto leading-relaxed"
             >
-              Full-Stack Software Engineer with an M.S. in Computer Science from UNC Charlotte. Previously at LEZIT Transports (Aug 2024 – Jul 2025). I build fast, accessible web apps with React, TypeScript, and Node.js and ship to the cloud. <strong className="text-primary-600 dark:text-primary-400">Actively seeking full-time software engineering opportunities.</strong>
+              Graduate student in Computer Science at UNC Charlotte with professional experience as a Software Development Engineer I at Amazon and Analyst – Python Developer at Deloitte. I build scalable backend services, data pipelines, and cloud-native solutions using Java, Python, SQL, and AWS. <strong className="text-primary-600 dark:text-primary-400">Actively seeking full-time software engineering opportunities.</strong>
             </motion.p>
 
             {/* CTA Buttons */}
@@ -175,7 +175,7 @@ const Home = () => {
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {/* LEZIT Transports */}
+            {/* Amazon – SDE I */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -183,33 +183,34 @@ const Home = () => {
               viewport={{ once: true }}
               className="card p-6 relative overflow-hidden"
             >
-              {/* Past Role Badge removed */}
-              
               <div className="flex items-start space-x-4">
                 <div className="p-3 bg-white dark:bg-gray-800 rounded-lg shadow-sm">
-                  <div className="w-8 h-8 bg-gradient-to-r from-green-500 to-green-600 rounded-lg flex items-center justify-center">
-                    <span className="text-white font-bold text-sm">L</span>
-                  </div>
+                  <img 
+                    src="/amazon-logo.png" 
+                    alt="Amazon Logo" 
+                    className="w-8 h-8 object-contain"
+                  />
                 </div>
                 <div className="flex-1">
                   <h3 className="text-xl font-bold text-gray-900 dark:text-gray-100 mb-2">
-                    LEZIT Transports
+                    Amazon
                   </h3>
                   <p className="text-primary-600 dark:text-primary-400 font-medium mb-2">
-                    Full-Stack Software Engineer
+                    Software Development Engineer I
                   </p>
                   <p className="text-sm text-gray-500 dark:text-gray-500 mb-3">
-                    Aug 2024 – Jul 2025 • Remote
+                    Jan 2023 – Jul 2024 • Telangana, India
                   </p>
                   <p className="text-gray-600 dark:text-gray-400 text-sm">
-                    Executed end-to-end software solution design and development for a real-time transportation booking platform.
-                    Developed secure code using React.js, TypeScript, and Node.js with scalable backend architecture.
+                    Developed backend services and RESTful microservices using Java and Spring Boot, working across 
+                    distributed systems and AWS (EC2, S3, IAM). Built Dockerized services on Kubernetes and automated 
+                    reporting/monitoring pipelines with Python, NumPy, and SQLAlchemy for operational metrics.
                   </p>
                 </div>
               </div>
             </motion.div>
 
-            {/* Deloitte Experience */}
+            {/* Deloitte – Python Developer */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -227,23 +228,24 @@ const Home = () => {
                 </div>
                 <div className="flex-1">
                   <h3 className="text-xl font-bold text-gray-900 dark:text-gray-100 mb-2">
-                    Deloitte USI
+                    Deloitte
                   </h3>
                   <p className="text-primary-600 dark:text-primary-400 font-medium mb-2">
-                    Analyst & Software Developer
+                    Analyst – Python Developer
                   </p>
                   <p className="text-sm text-gray-500 dark:text-gray-500 mb-3">
-                    Sep 2023 – Jul 2024 • Telangana, India
+                    Jun 2021 – Dec 2022
                   </p>
                   <p className="text-gray-600 dark:text-gray-400 text-sm">
-                    Executed software development tasks, created Power BI dashboards with SQL Server and Azure cloud. 
-                    Reduced manual reporting processes by 40% through automation and improved application performance by 20%.
+                    Built backend services with Python (Django) to power internal data workflows and enterprise 
+                    integrations. Developed data processing pipelines using Python, Pandas, and NumPy, and optimized 
+                    SQL/PLSQL queries on Oracle 12c for reporting and analytics.
                   </p>
                 </div>
               </div>
             </motion.div>
 
-            {/* Amazon Experience */}
+            {/* Education & Research */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -251,40 +253,31 @@ const Home = () => {
               viewport={{ once: true }}
               className="card p-6 relative overflow-hidden"
             >
-              {/* Accolade Badge */}
-              <div className="absolute top-4 right-4">
-                <div className="bg-gradient-to-r from-yellow-400 to-orange-500 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg">
-                  🏆 Accolade Award
-                </div>
-              </div>
-              
               <div className="flex items-start space-x-4">
                 <div className="p-3 bg-white dark:bg-gray-800 rounded-lg shadow-sm">
-                  <img 
-                    src="/amazon-logo.png" 
-                    alt="Amazon Logo" 
-                    className="w-8 h-8 object-contain"
-                  />
+                  <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-lg flex items-center justify-center">
+                    <span className="text-white font-bold text-sm">UNCC</span>
+                  </div>
                 </div>
                 <div className="flex-1">
                   <h3 className="text-xl font-bold text-gray-900 dark:text-gray-100 mb-2">
-                    Amazon
+                    UNC Charlotte
                   </h3>
                   <p className="text-primary-600 dark:text-primary-400 font-medium mb-2">
-                    Cloud Infrastructure & DevOps Engineer Intern
+                    M.S. in Computer Science
                   </p>
                   <p className="text-sm text-gray-500 dark:text-gray-500 mb-3">
-                    Jan 2023 – Jun 2023 • Development Center, Telangana, India
+                    Aug 2024 – Dec 2025 • Charlotte, NC
                   </p>
                   <p className="text-gray-600 dark:text-gray-400 text-sm mb-3">
-                    Enhanced CI/CD automation pipelines, reducing manual toil by 50%. Implemented secure IAM-based authentication 
-                    systems and cloud migration solutions using AWS CloudFormation and ECS.
+                    Graduate coursework and projects focused on deep learning, data-driven systems, and backend development.
+                    Built systems like a Django-based data management platform and a self-supervised image captioning
+                    pipeline using CNN–LSTM architectures and BYOL.
                   </p>
-                  <div className="bg-yellow-50 dark:bg-yellow-900/20 border-l-4 border-yellow-400 pl-3 py-2">
-                    <p className="text-sm text-yellow-800 dark:text-yellow-200 font-medium">
-                      🎉 Received accolade from senior manager for exceptional performance and contributions
-                    </p>
-                  </div>
+                  <p className="text-sm text-gray-600 dark:text-gray-400 italic">
+                    Publication: “A Review on Deep Learning Techniques for Classifying Images and Generating Captions”,
+                    Springer Nature, Dec 2023.
+                  </p>
                 </div>
               </div>
             </motion.div>

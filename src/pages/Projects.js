@@ -288,7 +288,7 @@ const Projects = () => {
       id: 14,
       title: 'AWS Infrastructure Automation',
       description: 'DevOps project focused on automating AWS infrastructure deployment using Infrastructure as Code (IaC) principles and CI/CD pipelines.',
-      longDescription: 'Developed during my internship at Amazon, this project implements Infrastructure as Code using AWS CloudFormation and Terraform. The solution includes automated CI/CD pipelines with Jenkins and GitHub Actions, containerization with Docker, and comprehensive monitoring and logging solutions.',
+      longDescription: 'Developed during my role at Amazon, this project implements Infrastructure as Code using AWS CloudFormation and Terraform. The solution includes automated CI/CD pipelines with Jenkins and GitHub Actions, containerization with Docker, and comprehensive monitoring and logging solutions.',
       image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80',
       category: 'devops',
       technologies: ['AWS', 'Terraform', 'Docker', 'Jenkins', 'GitHub Actions', 'CloudFormation', 'Monitoring'],
