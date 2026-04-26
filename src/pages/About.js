@@ -45,7 +45,7 @@ const About = () => {
               variants={itemVariants}
               className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto"
             >
-              Software Engineer passionate about building innovative solutions and creating impactful user experiences
+              Data Engineer building scalable cloud pipelines and analytics systems with measurable business outcomes
             </motion.p>
           </motion.div>
         </div>
@@ -106,20 +106,21 @@ const About = () => {
                     Current Status
                   </h3>
                   <p className="text-gray-600 dark:text-gray-400 mb-3">
-                    <strong>M.S. Computer Science Student & Software Engineer</strong>
+                    <strong>Data Engineer with 2+ years of experience</strong>
                   </p>
                   <p className="text-gray-600 dark:text-gray-400 mb-4">
-                    Graduate student in Computer Science at UNC Charlotte with professional experience as a Software
-                    Development Engineer I at Amazon and Analyst – Python Developer at Deloitte.
+                    I design and optimize cloud-based data pipelines, ETL workflows, and analytics platforms across big tech and
+                    enterprise consulting environments. I specialize in AWS, Python, SQL, Spark, and dbt, with a focus on
+                    production reliability, on-call ownership, and converting complex data requirements into business impact.
                   </p>
                   <div className="space-y-3">
                     <div className="flex items-center space-x-2">
                       <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-                      <span className="text-sm font-semibold text-gray-900 dark:text-gray-100">Actively seeking Full-time software engineering roles</span>
+                      <span className="text-sm font-semibold text-gray-900 dark:text-gray-100">Actively seeking full-time Data Engineer roles</span>
                     </div>
                     <div className="flex items-center space-x-2">
                       <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
-                      <span className="text-sm text-gray-600 dark:text-gray-400">Open to remote, hybrid, and on-site opportunities</span>
+                      <span className="text-sm text-gray-600 dark:text-gray-400">Open to remote, hybrid, and on-site data platform opportunities</span>
                     </div>
                     <div className="flex items-center space-x-2">
                       <div className="w-2 h-2 bg-purple-500 rounded-full"></div>
@@ -161,18 +162,22 @@ const About = () => {
                       <div className="flex items-center space-x-4 text-sm text-gray-500 dark:text-gray-500">
                         <div className="flex items-center space-x-1">
                           <Calendar size={16} />
-                          <span>Aug '24 – Dec '25 (Graduated)</span>
+                          <span>Aug '24 - Dec '25</span>
                         </div>
                         <div className="flex items-center space-x-1">
                           <MapPin size={16} />
                           <span>Charlotte, NC</span>
                         </div>
                       </div>
+                      <p className="text-sm text-gray-500 dark:text-gray-500 mt-3">
+                        Bachelor of Engineering in Information Technology, Chaitanya Bharathi Institute of Technology (Aug '19 - Jun '23, India)
+                      </p>
+                      <p className="text-sm text-gray-500 dark:text-gray-500 mt-2">
+                        Publication: "A Review on Deep Learning Techniques for Classifying Images and Generating Captions" - Springer Nature, Dec 2023
+                      </p>
                     </div>
                   </div>
                 </div>
-
-                {/* Removed Bachelor of Engineering section as requested */}
 
                 <div className="card p-6">
                   <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-4">
@@ -181,26 +186,38 @@ const About = () => {
                   <div className="space-y-4">
                     <div className="border-l-4 border-primary-600 dark:border-primary-400 pl-4">
                       <h4 className="font-semibold text-gray-900 dark:text-gray-100">
-                        Amazon
+                        Deloitte
                       </h4>
                       <p className="text-gray-600 dark:text-gray-400">
-                        Software Development Engineer I (Jan '23 – Jul '24)
+                        Analyst - Data Engineer (Sep '23 - Jul '24)
                       </p>
                       <p className="text-sm text-gray-500 dark:text-gray-500">
-                        Developed backend services and RESTful microservices using Java and Spring Boot, working across
-                        distributed systems and AWS (EC2, S3, IAM). Automated monitoring and reporting with Python and SQL.
+                        Built ELT pipelines processing 10M+ records/day with Python, dbt, and Snowflake, cutting reporting
+                        latency from 24 hours to under 2 hours while improving reliability for enterprise stakeholders.
                       </p>
                     </div>
                     <div className="border-l-4 border-primary-600 dark:border-primary-400 pl-4">
                       <h4 className="font-semibold text-gray-900 dark:text-gray-100">
-                        Deloitte
+                        Amazon
                       </h4>
                       <p className="text-gray-600 dark:text-gray-400">
-                        Analyst – Python Developer (Jun '21 – Dec '22)
+                        Cloud Data Engineer Intern (Jan '23 - Jun '23)
                       </p>
                       <p className="text-sm text-gray-500 dark:text-gray-500">
-                        Built backend services in Python (Django), data processing pipelines with Pandas and NumPy, and
-                        optimized SQL/PLSQL queries on Oracle 12c for reporting and analytics.
+                        Re-engineered AWS ingestion workflows with Glue, S3, Redshift, and CloudWatch, increasing uptime
+                        to 99.5% and reducing manual intervention incidents by 60%.
+                      </p>
+                    </div>
+                    <div className="border-l-4 border-primary-600 dark:border-primary-400 pl-4">
+                      <h4 className="font-semibold text-gray-900 dark:text-gray-100">
+                        Lezit Transports
+                      </h4>
+                      <p className="text-gray-600 dark:text-gray-400">
+                        Data Analyst Intern (Jan '22 - Dec '22)
+                      </p>
+                      <p className="text-sm text-gray-500 dark:text-gray-500">
+                        Analyzed logistics datasets using Python and SQL, helping drive a 12% fuel cost reduction through
+                        route optimization and automated weekly reporting.
                       </p>
                     </div>
                   </div>
@@ -286,16 +303,13 @@ const About = () => {
                 My Mission
               </h2>
               <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
-                I'm passionate about leveraging technology to solve real-world problems and create meaningful impact. 
-                With a strong foundation in backend services, data processing, and cloud infrastructure, I enjoy building 
-                systems that are reliable, observable, and scalable. My experience at Amazon and Deloitte has taught me the importance 
-                of scalable architecture, clean code, and collaborative development practices.
+                I build scalable data infrastructure and analytics systems that improve reliability, reduce latency,
+                and support faster business decision-making. Across Deloitte, Amazon, and Lezit, I have delivered
+                cloud-native pipelines, data quality frameworks, and operational automation with measurable outcomes.
               </p>
               <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed mt-4">
-                Recently graduated with my Master's in Computer Science from UNC Charlotte, I'm now actively seeking full-time opportunities 
-                where I can apply my skills in React, TypeScript, Node.js, and cloud technologies. I believe in writing code that's not just 
-                functional, but also maintainable, scalable, and user-friendly. I'm excited to contribute to innovative projects and continue 
-                growing as a software engineer.
+                I am focused on Data Engineering roles where I can design production-grade ETL/ELT systems,
+                uphold on-call reliability, and enable self-serve analytics at scale.
               </p>
             </motion.div>
           </motion.div>

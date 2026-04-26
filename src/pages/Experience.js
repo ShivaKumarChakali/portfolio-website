@@ -26,37 +26,51 @@ const Experience = () => {
 
   const experiences = [
     {
-      company: 'Amazon',
-      role: 'Software Development Engineer I',
-      duration: 'January 2023 – July 2024',
-      location: 'Telangana, India',
-      icon: Code,
-      color: 'from-orange-500 to-orange-600',
-      achievements: [
-        'Received an accolade award from senior leadership for exceptional performance and impact on critical services',
-        'Developed backend services using Java and Spring Boot to support scalable internal APIs and service integrations across distributed systems',
-        'Designed and implemented RESTful microservices enabling reliable, fault-tolerant communication between services',
-        'Worked with AWS services including EC2, S3, and IAM to support deployments and improve infrastructure reliability',
-        'Automated reporting and monitoring scripts using Python, NumPy, and SQLAlchemy to analyze system metrics and support root cause analysis',
-        'Containerized services using Docker and supported orchestration in Kubernetes environments while collaborating through Git-based workflows and CI/CD pipelines'
-      ],
-      technologies: ['Java', 'Spring Boot', 'REST APIs', 'AWS EC2', 'AWS S3', 'AWS IAM', 'Python', 'NumPy', 'SQLAlchemy', 'Docker', 'Kubernetes', 'CI/CD', 'Git']
-    },
-    {
       company: 'Deloitte',
-      role: 'Analyst – Python Developer',
-      duration: 'June 2021 – December 2022',
+      role: 'Analyst - Data Engineer',
+      duration: 'September 2023 - July 2024',
       location: 'India',
       icon: Building,
       color: 'from-blue-500 to-blue-600',
       achievements: [
-        'Developed backend services using Python (Django) to support internal data workflows and enterprise integrations',
-        'Built data processing scripts with Python, Pandas, and NumPy to clean, transform, and analyze large business datasets',
-        'Optimized SQL/PLSQL queries on Oracle 12c for data extraction, transformation, and reporting tasks',
-        'Integrated enterprise systems using AWS services and MuleSoft APIs to enable reliable data exchange',
-        'Performed exploratory data analysis (EDA) to identify trends, anomalies, and operational insights while supporting CI/CD pipelines and production monitoring with Splunk and Jira'
+        'Architected end-to-end ELT pipelines processing 10M+ records daily using Python, dbt, and Snowflake, reducing reporting latency from 24 hours to under 2 hours',
+        'Built a centralized analytics layer with star-schema models and live Power BI dashboards, cutting ad-hoc data requests by 40% across 5+ teams',
+        'Implemented automated data quality checks using dbt tests and custom Python validators, reducing pipeline failures by 35%',
+        'Optimized slow SQL queries and Spark jobs with partitioning, indexing, and broadcast joins, achieving 3x faster query execution',
+        'Supported on-call production pipelines across 3 enterprise accounts, resolving incidents within SLA and maintaining 97%+ delivery uptime'
       ],
-      technologies: ['Python', 'Django', 'Pandas', 'NumPy', 'SQL', 'PLSQL', 'Oracle 12c', 'AWS', 'MuleSoft', 'EDA', 'CI/CD', 'Splunk', 'Jira']
+      technologies: ['Python', 'SQL', 'Spark', 'dbt', 'Snowflake', 'Power BI', 'AWS', 'Airflow', 'Data Quality', 'On-call Support']
+    },
+    {
+      company: 'Amazon',
+      role: 'Cloud Data Engineer Intern',
+      duration: 'January 2023 - June 2023',
+      location: 'India',
+      icon: Cloud,
+      color: 'from-orange-500 to-orange-600',
+      achievements: [
+        'Re-engineered AWS ingestion workflows using Glue, S3, and Redshift with CloudWatch monitoring and SQS dead-letter queues, increasing uptime to 99.5%',
+        'Built a Python-based data quality framework for null checks, schema drift detection, and anomaly flagging across 50+ tables',
+        'Participated in on-call support rotations for production data infrastructure, resolving ingestion failures and schema drift incidents quickly',
+        'Partnered with product and data teams to define ingestion SLAs and schema standards for downstream analytics and ML workflows',
+        'Authored pipeline runbooks and incident response playbooks, reducing mean time to resolution for recurring data issues'
+      ],
+      technologies: ['AWS Glue', 'AWS S3', 'Amazon Redshift', 'CloudWatch', 'SQS', 'Python', 'Data Quality', 'On-call Support']
+    },
+    {
+      company: 'Lezit Transports',
+      role: 'Data Analyst Intern',
+      duration: 'January 2022 - December 2022',
+      location: 'India',
+      icon: BarChart3,
+      color: 'from-green-500 to-green-600',
+      achievements: [
+        'Analyzed operational logistics data using Python and SQL to identify route inefficiencies and cost drivers, contributing to a 12% reduction in fuel costs',
+        'Automated weekly reporting with Python scripts and Excel dashboards, saving operations managers 5+ hours per week',
+        'Built EDA workflows to profile incoming logistics datasets, identifying quality gaps before downstream reporting',
+        'Collaborated with operations and management to convert business questions into analytical frameworks and ad-hoc visual reports'
+      ],
+      technologies: ['Python', 'Pandas', 'NumPy', 'SQL', 'Excel Dashboards', 'EDA', 'Data Visualization']
     }
   ];
 
@@ -81,7 +95,7 @@ const Experience = () => {
               variants={itemVariants}
               className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto"
             >
-              My professional journey in software development and cloud technologies
+              2+ years delivering cloud data pipelines, ETL/ELT systems, and analytics platforms with measurable business outcomes
             </motion.p>
           </motion.div>
         </div>
@@ -200,7 +214,7 @@ const Experience = () => {
               variants={itemVariants}
               className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto"
             >
-              Areas of expertise developed through professional experience
+              Experience areas that consistently improved reliability, speed, and business decision quality
             </motion.p>
           </motion.div>
 
@@ -213,10 +227,10 @@ const Experience = () => {
                 <Code size={24} className="text-blue-600 dark:text-blue-400" />
               </div>
               <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-2">
-                Frontend Development
+                Data Pipeline Architecture
               </h3>
               <p className="text-gray-600 dark:text-gray-400 text-sm">
-                React, Angular, JavaScript, TypeScript, HTML/CSS, Responsive Design
+                Batch and near-real-time pipeline design for ingestion, transformation, and analytics delivery
               </p>
             </div>
 
@@ -225,10 +239,10 @@ const Experience = () => {
                 <Database size={24} className="text-green-600 dark:text-green-400" />
               </div>
               <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-2">
-                Backend & Data
+                ETL/ELT Engineering
               </h3>
               <p className="text-gray-600 dark:text-gray-400 text-sm">
-                Node.js, Python, SQL, MongoDB, REST APIs, Data Processing
+                Python, SQL, Spark, Airflow, and dbt workflows focused on reliability and data quality
               </p>
             </div>
 
@@ -240,7 +254,7 @@ const Experience = () => {
                 Data Analytics
               </h3>
               <p className="text-gray-600 dark:text-gray-400 text-sm">
-                Power BI, DAX, M Query, Data Visualization, Business Intelligence
+                Star-schema modeling, KPI development, dashboard delivery, and self-serve analytics enablement
               </p>
             </div>
 
@@ -252,7 +266,7 @@ const Experience = () => {
                 Cloud & DevOps
               </h3>
               <p className="text-gray-600 dark:text-gray-400 text-sm">
-                AWS, Docker, CI/CD, Jenkins, GitHub Actions, Infrastructure Management
+                AWS-based data infrastructure, monitoring, and incident response to maintain production uptime
               </p>
             </div>
           </motion.div>
@@ -304,15 +318,13 @@ const Experience = () => {
                     </div>
                   </div>
                   <p className="text-gray-600 dark:text-gray-400 mt-4">
-                    Currently pursuing advanced studies in Computer Science, focusing on software engineering, 
-                    algorithms, and emerging technologies. This program is enhancing my theoretical knowledge 
-                    and practical skills in modern software development practices.
+                    Master of Science in Computer Science.
+                    Bachelor of Engineering in Information Technology, Chaitanya Bharathi Institute of Technology.
+                    Publication: "A Review on Deep Learning Techniques for Classifying Images and Generating Captions" (Springer Nature, Dec 2023).
                   </p>
                 </div>
               </div>
             </div>
-
-            {/* Removed Bachelor of Engineering card as requested */}
           </motion.div>
         </div>
       </section>

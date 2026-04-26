@@ -38,7 +38,7 @@ const Footer = () => {
               Shiva Kumar Chakali
             </h3>
             <p className="text-gray-600 dark:text-gray-400">
-              Software Engineer passionate about building innovative solutions and creating impactful user experiences.
+              Data Engineer delivering scalable pipelines, faster reporting, and reliable insights that improve business decisions.
             </p>
           </div>
 

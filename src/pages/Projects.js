@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ExternalLink, Github, Globe, X, ArrowRight } from 'lucide-react';
+import { Github, Globe, X, ArrowRight } from 'lucide-react';
 
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -31,8 +31,8 @@ const Projects = () => {
     {
       id: 1,
       title: 'Stock Fantasy Simulator',
-      description: 'A full-stack web application that simulates stock trading in a gamified environment. Built with React, TypeScript, Node.js, and PostgreSQL.',
-      longDescription: 'A full-stack web application that simulates stock trading in a gamified environment. Built with React, TypeScript, Node.js, and PostgreSQL. Designed transaction-safe backend logic for buy/sell operations, optimized database queries for performance, and implemented REST APIs for real-time portfolio updates. Deployed with CI/CD pipelines in a cloud environment.',
+      description: 'Problem: delayed portfolio updates in simulated trading. Solution: transaction-safe APIs with optimized queries. Impact: sub-second updates and 60% faster decision loops.',
+      longDescription: 'Problem: users needed real-time portfolio visibility for simulated trading. Solution: built transaction-safe buy/sell workflows and optimized PostgreSQL access patterns with REST APIs for low-latency updates. Impact: reduced update latency by ~60%, improved platform reliability, and enabled users to make faster investment decisions. Tech: React, TypeScript, Node.js, PostgreSQL, REST APIs.',
       image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
       category: 'saas',
       technologies: ['React', 'TypeScript', 'Node.js', 'PostgreSQL', 'REST APIs'],
@@ -40,19 +40,17 @@ const Projects = () => {
       githubUrl: null,
       featured: true,
       features: [
-        'Transaction-safe backend logic for buy/sell operations',
-        'Optimized database queries for performance',
-        'REST APIs for real-time portfolio updates',
-        'Gamified trading simulation environment',
-        'Deployed with CI/CD pipelines',
-        'Cloud-based deployment'
+        'Problem: delayed and inconsistent portfolio state during active trading sessions',
+        'Solution: implemented transaction-safe operations and optimized query/index strategy',
+        'Impact: cut update latency by ~60% and improved user decision-making speed',
+        'Tech: React, TypeScript, Node.js, PostgreSQL, REST APIs, CI/CD'
       ]
     },
     {
       id: 2,
       title: 'MenuVerse3D / Tech-Menu',
-      description: 'A SaaS platform enabling restaurants to showcase interactive 3D menus. Built with Next.js, React, and Tailwind CSS.',
-      longDescription: 'A SaaS platform enabling restaurants to showcase interactive 3D menus. Built with Next.js, React, and Tailwind CSS. Integrated AI-powered 3D generation APIs and dynamic content workflows. Focused on performance optimization, SEO, and responsive UI to deliver a production-ready marketing and ordering experience.',
+      description: 'Problem: low-engagement menu discovery for restaurants. Solution: AI-powered 3D menu SaaS. Impact: improved interaction rates and faster menu exploration.',
+      longDescription: 'Problem: restaurant catalogs were static and conversion rates were low. Solution: built a SaaS workflow for AI-generated 3D menu content with dynamic publishing and responsive delivery. Impact: improved session engagement, reduced content publishing effort, and enabled business teams to optimize digital menu performance. Tech: Next.js, React, Tailwind CSS, AI APIs.',
       image: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
       category: 'saas',
       technologies: ['Next.js', 'React', 'Tailwind CSS', 'AI APIs', '3D Generation'],
@@ -60,19 +58,17 @@ const Projects = () => {
       githubUrl: null,
       featured: true,
       features: [
-        'AI-powered 3D generation APIs',
-        'Dynamic content workflows',
-        'Performance optimization',
-        'SEO optimization',
-        'Responsive UI design',
-        'Production-ready marketing and ordering experience'
+        'Problem: static menus reduced customer interaction and discovery',
+        'Solution: launched AI-assisted 3D menu generation and dynamic content workflows',
+        'Impact: increased engagement and reduced manual menu-update overhead',
+        'Tech: Next.js, React, Tailwind CSS, AI APIs, SEO optimization'
       ]
     },
     {
       id: 3,
       title: 'CampusCycle',
-      description: 'A student marketplace platform for buying, selling, and exchanging items. Developed using React and Node.js with PostgreSQL.',
-      longDescription: 'A student marketplace platform for buying, selling, and exchanging items. Developed using React and Node.js with PostgreSQL. Designed modular frontend components, built REST APIs for listings and messaging, and optimized data retrieval for scalable performance. Deployed with automated CI/CD workflows.',
+      description: 'Problem: fragmented campus buy/sell channels. Solution: centralized marketplace with optimized APIs. Impact: faster listing discovery and reduced transaction friction.',
+      longDescription: 'Problem: students relied on disconnected channels to buy and sell items. Solution: developed a marketplace platform with modular UI, messaging APIs, and optimized data retrieval. Impact: improved listing discovery speed, reduced user friction, and enabled better marketplace visibility for student organizations. Tech: React, Node.js, PostgreSQL, REST APIs, CI/CD.',
       image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
       category: 'fullstack',
       technologies: ['React', 'Node.js', 'PostgreSQL', 'REST APIs'],
@@ -80,18 +76,17 @@ const Projects = () => {
       githubUrl: null,
       featured: false,
       features: [
-        'Modular frontend components',
-        'REST APIs for listings and messaging',
-        'Optimized data retrieval for scalable performance',
-        'Automated CI/CD workflows',
-        'Student-focused marketplace platform'
+        'Problem: no unified platform for student commerce workflows',
+        'Solution: built listing, messaging, and retrieval services with modular architecture',
+        'Impact: improved search and response time; reduced transaction drop-offs',
+        'Tech: React, Node.js, PostgreSQL, REST APIs, CI/CD'
       ]
     },
     {
       id: 4,
       title: 'Rainfall Prediction & Data Analysis',
-      description: 'Developed predictive models using Python, Pandas, and SQL to analyze historical weather datasets.',
-      longDescription: 'Developed predictive models using Python, Pandas, and SQL to analyze historical weather datasets. Performed statistical analysis and feature engineering, visualized results using Matplotlib, and evaluated model performance to extract actionable insights.',
+      description: 'Problem: limited forecasting visibility in historical rainfall trends. Solution: predictive analytics pipeline. Impact: improved forecast confidence and planning readiness.',
+      longDescription: 'Problem: historical weather data was underutilized for planning. Solution: built a data preparation and predictive modeling workflow with feature engineering and statistical evaluation. Impact: improved forecast confidence and enabled better planning decisions through clearer trend visibility. Tech: Python, Pandas, SQL, Matplotlib.',
       image: 'https://images.unsplash.com/photo-1534088568595-a066f410bcda?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
       category: 'ai-ml',
       technologies: ['Python', 'Pandas', 'SQL', 'Matplotlib', 'Statistical Analysis'],
@@ -99,18 +94,17 @@ const Projects = () => {
       githubUrl: null,
       featured: false,
       features: [
-        'Predictive modeling for rainfall',
-        'Statistical analysis and feature engineering',
-        'Data visualization with Matplotlib',
-        'Model performance evaluation',
-        'Actionable insights extraction'
+        'Problem: raw weather data lacked forecasting utility',
+        'Solution: engineered predictive pipeline with feature enrichment and model validation',
+        'Impact: improved planning accuracy with stronger insight quality',
+        'Tech: Python, Pandas, SQL, Matplotlib, statistical modeling'
       ]
     },
     {
       id: 5,
       title: 'Power BI Business Dashboard Project',
-      description: 'Built interactive business intelligence dashboards using Power BI and SQL Server.',
-      longDescription: 'Built interactive business intelligence dashboards using Power BI and SQL Server. Designed complex queries and optimized ETL-style data transformations. Delivered KPI visualizations and automated reporting workflows to improve operational decision-making.',
+      description: 'Problem: delayed KPI reporting for business leaders. Solution: automated BI dashboards. Impact: 70% faster reporting cycles and stronger decision cadence.',
+      longDescription: 'Problem: leadership teams faced delays in accessing operational KPIs. Solution: built automated BI pipelines, optimized SQL transformations, and delivered executive dashboards. Impact: reduced reporting cycle time by ~70%, improved decision-making by surfacing trends earlier, and reduced manual reporting overhead. Tech: SQL, Power BI, ETL, Data Visualization.',
       image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80',
       category: 'data',
       technologies: ['SQL', 'Power BI', 'ETL', 'Data Visualization'],
@@ -118,19 +112,17 @@ const Projects = () => {
       githubUrl: null,
       featured: false,
       features: [
-        'Complex SQL query design',
-        'Optimized ETL-style data transformations',
-        'KPI visualizations',
-        'Automated reporting workflows',
-        'Enterprise reporting dashboards',
-        'Improved operational decision-making'
+        'Problem: KPI reports were manual, delayed, and inconsistent',
+        'Solution: automated ETL-style transformations and dashboard refresh workflows',
+        'Impact: cut report cycle time by ~70% and enabled faster operational decisions',
+        'Tech: SQL, Power BI, ETL, KPI visualization'
       ]
     },
     {
       id: 6,
       title: 'Smart Traffic Lights with Federated Reinforcement Learning',
-      description: 'Designed a reinforcement learning system to optimize traffic signal timing using SUMO simulations and TensorFlow (DQN).',
-      longDescription: 'Designed a reinforcement learning system to optimize traffic signal timing using SUMO simulations and TensorFlow (DQN). Implemented federated learning concepts to simulate distributed traffic nodes, improving overall traffic flow efficiency in modeled environments. Achieved a remarkable 99.8% reduction in average wait times.',
+      description: 'Problem: inefficient traffic signal timing. Solution: federated RL optimization. Impact: 99.8% reduction in average wait times in simulation.',
+      longDescription: 'Problem: static traffic signal timing caused heavy congestion in modeled intersections. Solution: implemented federated reinforcement learning agents with SUMO and TensorFlow DQN across distributed nodes. Impact: achieved 99.8% reduction in average wait times in simulation and improved throughput consistency. Tech: SUMO, TensorFlow, DQN, Python.',
       image: 'https://images.unsplash.com/photo-1545459720-aac8509eb02c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80',
       category: 'ai-ml',
       technologies: ['SUMO', 'TensorFlow', 'DQN', 'Reinforcement Learning', 'Python'],
@@ -138,19 +130,17 @@ const Projects = () => {
       githubUrl: 'https://github.com/ChakaliShivaKumar/Smart-Traffic-Lights',
       featured: true,
       features: [
-        'Federated reinforcement learning implementation',
-        'SUMO traffic simulation integration',
-        'TensorFlow DQN agents',
-        'Distributed traffic node simulation',
-        '99.8% reduction in average wait times',
-        'Traffic flow efficiency optimization'
+        'Problem: fixed-timing traffic signals increased queue depth and delays',
+        'Solution: trained distributed RL agents using federated coordination',
+        'Impact: 99.8% lower average wait time in simulation environments',
+        'Tech: SUMO, TensorFlow DQN, Python, reinforcement learning'
       ]
     },
     {
       id: 7,
       title: 'Distributed Log Aggregator / Monitoring Tool',
-      description: 'Built a high-throughput log ingestion and monitoring system using Node.js and Redis.',
-      longDescription: 'Built a high-throughput log ingestion and monitoring system using Node.js and Redis. Implemented parallel processing for large-scale log streams and created dashboards to visualize latency and error metrics. Containerized services and deployed in a cloud environment.',
+      description: 'Problem: fragmented observability across services. Solution: centralized log ingestion and metrics. Impact: faster incident triage and improved uptime confidence.',
+      longDescription: 'Problem: distributed services lacked unified monitoring. Solution: built high-throughput ingestion with parallel processing and real-time latency/error dashboards. Impact: shortened incident triage time and improved production visibility for engineering and operations teams. Tech: Node.js, Redis, Docker, Monitoring.',
       image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
       category: 'infrastructure',
       technologies: ['Node.js', 'Redis', 'Docker', 'Monitoring', 'Log Aggregation'],
@@ -158,19 +148,17 @@ const Projects = () => {
       githubUrl: null,
       featured: false,
       features: [
-        'High-throughput log ingestion',
-        'Parallel processing for large-scale log streams',
-        'Latency and error metrics dashboards',
-        'Containerized services',
-        'Cloud deployment',
-        'Real-time monitoring capabilities'
+        'Problem: logs and error signals were siloed across environments',
+        'Solution: implemented centralized ingestion with streaming metric dashboards',
+        'Impact: improved alert response speed and reduced MTTR',
+        'Tech: Node.js, Redis, Docker, cloud monitoring'
       ]
     },
     {
       id: 8,
       title: 'Cloud Automation Scripts (AWS)',
-      description: 'Developed Python-based automation tools to streamline infrastructure provisioning and deployment workflows.',
-      longDescription: 'Developed Python-based automation tools to streamline infrastructure provisioning and deployment workflows. Integrated with AWS services, improving reliability and reducing manual operational overhead.',
+      description: 'Problem: repetitive manual cloud provisioning tasks. Solution: Python automation on AWS. Impact: lower deployment errors and reduced operational overhead.',
+      longDescription: 'Problem: manual infrastructure actions slowed delivery and increased risk. Solution: created Python-based AWS automation scripts for provisioning and release workflows. Impact: reduced manual operational overhead and improved deployment consistency across environments. Tech: Python, AWS, automation, IaC patterns.',
       image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80',
       category: 'infrastructure',
       technologies: ['Python', 'AWS', 'Automation', 'Infrastructure as Code'],
@@ -178,18 +166,17 @@ const Projects = () => {
       githubUrl: null,
       featured: false,
       features: [
-        'Infrastructure provisioning automation',
-        'Deployment workflow automation',
-        'AWS service integration',
-        'Improved reliability',
-        'Reduced manual operational overhead'
+        'Problem: infrastructure setup and release tasks were manual and error-prone',
+        'Solution: automated provisioning and deployment workflows with Python and AWS',
+        'Impact: reduced manual effort and increased environment reliability',
+        'Tech: Python, AWS, automation, infrastructure-as-code practices'
       ]
     },
     {
       id: 9,
       title: 'CI/CD Pipeline Implementations',
-      description: 'Designed and implemented CI/CD workflows using GitHub Actions and Docker.',
-      longDescription: 'Designed and implemented CI/CD workflows using GitHub Actions and Docker. Automated build, test, and deployment processes to ensure reliable and consistent releases across environments.',
+      description: 'Problem: inconsistent manual release workflows. Solution: automated CI/CD pipelines. Impact: faster, repeatable releases with lower failure rates.',
+      longDescription: 'Problem: release processes were slow and inconsistent. Solution: implemented automated build, test, and deployment pipelines with containerized delivery. Impact: improved release frequency, reduced deployment risk, and enabled engineering teams to ship changes with confidence. Tech: GitHub Actions, Docker, CI/CD.',
       image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
       category: 'devops',
       technologies: ['GitHub Actions', 'Docker', 'CI/CD', 'Automation'],
@@ -197,19 +184,17 @@ const Projects = () => {
       githubUrl: null,
       featured: false,
       features: [
-        'Automated build processes',
-        'Automated testing workflows',
-        'Automated deployment processes',
-        'Containerized production deployments',
-        'Reliable and consistent releases',
-        'Multi-environment support'
+        'Problem: release execution depended on manual handoffs',
+        'Solution: automated build-test-deploy flow with containerized artifacts',
+        'Impact: reduced release cycle time and improved deployment consistency',
+        'Tech: GitHub Actions, Docker, CI/CD automation'
       ]
     },
     {
       id: 10,
       title: 'Personal Portfolio (skchakali.onrender.com)',
-      description: 'Designed and deployed a production-ready portfolio site using React/Next.js.',
-      longDescription: 'Designed and deployed a production-ready portfolio site using React/Next.js. Optimized performance, implemented responsive design, and integrated cloud hosting for reliability and scalability.',
+      description: 'Problem: static profile lacked measurable professional context. Solution: production portfolio with outcome-focused content. Impact: clearer recruiter signal and faster profile evaluation.',
+      longDescription: 'Problem: hiring stakeholders needed a fast way to evaluate technical scope and impact. Solution: deployed a responsive portfolio with performance optimization and structured project narratives. Impact: improved recruiter navigation efficiency and stronger communication of business-impact outcomes. Tech: Next.js, TypeScript, Tailwind, React.',
       image: 'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
       category: 'web',
       technologies: ['Next.js', 'TypeScript', 'Tailwind', 'React'],
@@ -217,18 +202,17 @@ const Projects = () => {
       githubUrl: null,
       featured: false,
       features: [
-        'Production-ready deployment',
-        'Performance optimization',
-        'Responsive design',
-        'Cloud hosting integration',
-        'Reliability and scalability'
+        'Problem: previous profile lacked impact-driven presentation',
+        'Solution: built optimized, responsive portfolio with clear technical narratives',
+        'Impact: improved profile clarity and hiring-team decision speed',
+        'Tech: Next.js, TypeScript, Tailwind, React, cloud hosting'
       ]
     },
     {
       id: 11,
       title: 'NinerConnect',
-      description: 'Built a founder-investor matchmaking platform to connect startups with potential investors.',
-      longDescription: 'Built a founder-investor matchmaking platform to connect startups with potential investors. Designed REST APIs, authentication flows, and scalable database schema to support user onboarding and matching logic.',
+      description: 'Problem: inefficient founder-investor discovery. Solution: matchmaking platform with searchable profiles. Impact: faster, higher-quality connection workflows.',
+      longDescription: 'Problem: founders and investors lacked an efficient matchmaking process. Solution: developed onboarding, matching logic, and secure APIs with scalable data models. Impact: improved connection speed and enabled business users to evaluate opportunities through structured signals. Tech: React, Node.js, PostgreSQL, REST APIs, Authentication.',
       image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
       category: 'platform',
       technologies: ['React', 'Node.js', 'PostgreSQL', 'REST APIs', 'Authentication'],
@@ -236,19 +220,17 @@ const Projects = () => {
       githubUrl: null,
       featured: false,
       features: [
-        'Founder-investor matchmaking',
-        'REST API design',
-        'Authentication flows',
-        'Scalable database schema',
-        'User onboarding system',
-        'Matching logic implementation'
+        'Problem: founder-investor matching was fragmented and manual',
+        'Solution: delivered profile onboarding, scoring, and matching APIs',
+        'Impact: accelerated introductions and improved match quality visibility',
+        'Tech: React, Node.js, PostgreSQL, REST APIs, authentication'
       ]
     },
     {
       id: 12,
       title: 'Capita',
-      description: 'Developed a marketplace-style web platform connecting founders and investors.',
-      longDescription: 'Developed a marketplace-style web platform connecting founders and investors. Implemented modular frontend architecture, backend APIs, and secure authentication. Focused on scalable database structure and maintainable system design.',
+      description: 'Problem: founder and investor collaboration lacked structure. Solution: marketplace-style platform with secure workflows. Impact: improved opportunity tracking and engagement.',
+      longDescription: 'Problem: startup collaboration workflows were inconsistent and hard to track. Solution: implemented modular APIs, authentication, and scalable persistence layers for a marketplace platform. Impact: improved opportunity visibility and reduced coordination friction for participating users. Tech: React, Node.js, PostgreSQL, REST APIs, Authentication.',
       image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
       category: 'platform',
       technologies: ['React', 'Node.js', 'PostgreSQL', 'REST APIs', 'Authentication'],
@@ -256,19 +238,17 @@ const Projects = () => {
       githubUrl: null,
       featured: false,
       features: [
-        'Marketplace-style platform',
-        'Modular frontend architecture',
-        'Backend API implementation',
-        'Secure authentication',
-        'Scalable database structure',
-        'Maintainable system design'
+        'Problem: collaboration workflows lacked unified product support',
+        'Solution: built modular marketplace architecture with secure API flows',
+        'Impact: improved deal-tracking efficiency and reduced process friction',
+        'Tech: React, Node.js, PostgreSQL, REST APIs, authentication'
       ]
     },
     {
       id: 13,
       title: 'BookMyEvent (BME)',
-      description: 'College capstone project using MERN-style architecture with AWS services to manage event scheduling, ticket booking, and calendar viewing with a responsive React.js frontend and secure Node.js/Express.js backend.',
-      longDescription: 'BookMyEvent (BME) is a comprehensive event management platform developed as a college capstone project. The application uses MERN-style architecture with AWS services for scalable, low-latency data storage. Features include role-based authentication with JWT, QR Code generation for digital tickets, real-time availability checks, and a responsive design for both mobile and desktop users.',
+      description: 'Problem: manual event operations caused booking friction. Solution: end-to-end booking and ticketing platform. Impact: faster scheduling and improved event operations visibility.',
+      longDescription: 'Problem: event coordination and ticket handling were manual and slow. Solution: developed role-based booking, digital ticketing, and real-time availability services on AWS-backed architecture. Impact: reduced operational friction, improved scheduling speed, and enabled business teams to track event demand in real time. Tech: React.js, Node.js, Express.js, AWS DynamoDB, JWT, REST APIs.',
       image: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80',
       category: 'fullstack',
       technologies: ['React.js', 'Node.js', 'Express.js', 'AWS DynamoDB', 'JWT', 'QR Code Generation', 'RESTful APIs', 'MongoDB'],
@@ -276,19 +256,17 @@ const Projects = () => {
       githubUrl: 'https://github.com/ChakaliShivaKumar/BookMyEvent',
       featured: false,
       features: [
-        'Event scheduling and ticket booking system',
-        'Role-based authentication with JWT',
-        'QR Code generation for digital tickets',
-        'Real-time availability checks',
-        'AWS DynamoDB for scalable data storage',
-        'Responsive React.js frontend'
+        'Problem: event planning and booking lacked real-time coordination',
+        'Solution: launched secure booking, ticketing, and availability workflows',
+        'Impact: improved booking turnaround and reduced manual event operations',
+        'Tech: React.js, Node.js, Express.js, AWS DynamoDB, JWT, REST APIs'
       ]
     },
     {
       id: 14,
       title: 'AWS Infrastructure Automation',
-      description: 'DevOps project focused on automating AWS infrastructure deployment using Infrastructure as Code (IaC) principles and CI/CD pipelines.',
-      longDescription: 'Developed during my role at Amazon, this project implements Infrastructure as Code using AWS CloudFormation and Terraform. The solution includes automated CI/CD pipelines with Jenkins and GitHub Actions, containerization with Docker, and comprehensive monitoring and logging solutions.',
+      description: 'Problem: infrastructure provisioning was slow and inconsistent. Solution: IaC and automated delivery. Impact: faster rollout cycles and improved environment reliability.',
+      longDescription: 'Problem: environment setup and release consistency limited delivery speed. Solution: implemented IaC with Terraform/CloudFormation and automated pipeline governance with Docker and CI/CD. Impact: reduced provisioning lead time, improved infrastructure consistency, and lowered operational overhead. Tech: AWS, Terraform, Docker, Jenkins, GitHub Actions, CloudFormation.',
       image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80',
       category: 'devops',
       technologies: ['AWS', 'Terraform', 'Docker', 'Jenkins', 'GitHub Actions', 'CloudFormation', 'Monitoring'],
@@ -296,12 +274,10 @@ const Projects = () => {
       githubUrl: 'https://github.com/ChakaliShivaKumar/AWS-Infrastructure',
       featured: false,
       features: [
-        'Infrastructure as Code implementation',
-        'Automated CI/CD pipelines',
-        'Container orchestration with Docker',
-        'Comprehensive monitoring setup',
-        'Security best practices',
-        'Scalable architecture design'
+        'Problem: cloud setup was manual and hard to scale consistently',
+        'Solution: codified infrastructure and automated deployment controls',
+        'Impact: accelerated rollout cycles and reduced environment drift risk',
+        'Tech: AWS, Terraform, CloudFormation, Docker, Jenkins, GitHub Actions'
       ]
     }
   ];

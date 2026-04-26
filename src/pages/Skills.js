@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Code, Cloud, BarChart3, Globe, Brain, Zap, Shield } from 'lucide-react';
 
 const Skills = () => {
-  const [activeCategory, setActiveCategory] = useState('languages');
+  const [activeCategory, setActiveCategory] = useState('data');
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -28,62 +28,34 @@ const Skills = () => {
 
   const skillCategories = [
     {
-      id: 'languages',
-      name: 'Programming Languages',
-      icon: Code,
-      color: 'from-blue-500 to-blue-600',
+      id: 'data',
+      name: 'Data Engineering & Analytics',
+      icon: BarChart3,
+      color: 'from-purple-500 to-purple-600',
       skills: [
-        { name: 'JavaScript', level: 90, icon: '⚡' },
-        { name: 'TypeScript', level: 88, icon: '📘' },
-        { name: 'Python', level: 85, icon: '🐍' },
-        { name: 'Java', level: 80, icon: '☕' },
-        { name: 'SQL', level: 88, icon: '🗄️' },
-        { name: 'C++', level: 75, icon: '⚙️' }
-      ]
-    },
-    {
-      id: 'frameworks',
-      name: 'Frameworks & Libraries',
-      icon: Globe,
-      color: 'from-green-500 to-green-600',
-      skills: [
-        { name: 'React', level: 92, icon: '⚛️' },
-        { name: 'Next.js', level: 85, icon: '▲' },
-        { name: 'Node.js', level: 88, icon: '🟢' },
-        { name: 'Express.js', level: 88, icon: '🚂' },
-        { name: 'Tailwind CSS', level: 90, icon: '🎨' },
-        { name: 'Angular', level: 80, icon: '🅰️' },
-        { name: 'Flask', level: 75, icon: '🍶' }
+        { name: 'Apache Spark', level: 88, icon: '⚡' },
+        { name: 'Apache Kafka', level: 82, icon: '🛰️' },
+        { name: 'Airflow', level: 84, icon: '🌬️' },
+        { name: 'dbt', level: 88, icon: '🧱' },
+        { name: 'ETL/ELT Pipelines', level: 90, icon: '🔄' },
+        { name: 'Power BI', level: 86, icon: '📊' },
+        { name: 'Tableau', level: 80, icon: '📈' },
+        { name: 'Jupyter', level: 85, icon: '📓' }
       ]
     },
     {
       id: 'cloud',
-      name: 'Cloud & DevOps',
+      name: 'Cloud & Data Platforms',
       icon: Cloud,
       color: 'from-orange-500 to-orange-600',
       skills: [
-        { name: 'AWS', level: 80, icon: '☁️' },
-        { name: 'Docker', level: 75, icon: '🐳' },
-        { name: 'CI/CD', level: 80, icon: '🔄' },
-        { name: 'Jenkins', level: 75, icon: '🤖' },
-        { name: 'GitHub Actions', level: 80, icon: '⚡' },
-        { name: 'Terraform', level: 70, icon: '🏗️' }
-      ]
-    },
-    {
-      id: 'data',
-      name: 'Data & Analytics',
-      icon: BarChart3,
-      color: 'from-purple-500 to-purple-600',
-      skills: [
-        { name: 'PostgreSQL', level: 88, icon: '🐘' },
-        { name: 'MongoDB', level: 85, icon: '🍃' },
-        { name: 'MySQL', level: 85, icon: '🐬' },
-        { name: 'Power BI', level: 85, icon: '📊' },
-        { name: 'DAX', level: 80, icon: '📈' },
-        { name: 'M Query', level: 80, icon: '🔍' },
-        { name: 'Azure Synapse', level: 75, icon: '🔗' },
-        { name: 'Redis', level: 80, icon: '🔴' }
+        { name: 'AWS S3', level: 88, icon: '🪣' },
+        { name: 'AWS Glue', level: 86, icon: '🧩' },
+        { name: 'AWS Redshift', level: 85, icon: '🟥' },
+        { name: 'AWS Lambda', level: 80, icon: 'λ' },
+        { name: 'AWS EMR', level: 78, icon: '📡' },
+        { name: 'Snowflake', level: 86, icon: '❄️' },
+        { name: 'Databricks', level: 82, icon: '🧱' }
       ]
     },
     {
@@ -92,14 +64,37 @@ const Skills = () => {
       icon: Brain,
       color: 'from-pink-500 to-pink-600',
       skills: [
-        { name: 'TensorFlow', level: 78, icon: '🧠' },
-        { name: 'Reinforcement Learning', level: 82, icon: '🎯' },
-        { name: 'Deep Q-Network (DQN)', level: 78, icon: '🕸️' },
-        { name: 'Federated Learning', level: 75, icon: '🌐' },
-        { name: 'SUMO Simulation', level: 75, icon: '🚦' },
+        { name: 'TensorFlow', level: 80, icon: '🧠' },
+        { name: 'PyTorch', level: 78, icon: '🔥' },
+        { name: 'Scikit-learn', level: 82, icon: '🔬' },
+        { name: 'Deep Learning', level: 84, icon: '🕸️' },
+        { name: 'Computer Vision', level: 80, icon: '👁️' },
         { name: 'NumPy', level: 88, icon: '🔢' },
-        { name: 'Pandas', level: 88, icon: '🐼' },
-        { name: 'Scikit-learn', level: 75, icon: '🔬' }
+        { name: 'Pandas', level: 88, icon: '🐼' }
+      ]
+    },
+    {
+      id: 'languages',
+      name: 'Programming Languages',
+      icon: Code,
+      color: 'from-blue-500 to-blue-600',
+      skills: [
+        { name: 'Python', level: 90, icon: '🐍' },
+        { name: 'SQL', level: 90, icon: '🗄️' },
+        { name: 'Scala', level: 78, icon: '🧪' },
+        { name: 'Bash', level: 82, icon: '⌨️' }
+      ]
+    },
+    {
+      id: 'frameworks',
+      name: 'Databases',
+      icon: Globe,
+      color: 'from-green-500 to-green-600',
+      skills: [
+        { name: 'PostgreSQL', level: 88, icon: '🐘' },
+        { name: 'MySQL', level: 84, icon: '🐬' },
+        { name: 'DynamoDB', level: 80, icon: '⚙️' },
+        { name: 'Redshift', level: 85, icon: '🟥' }
       ]
     },
     {
@@ -109,12 +104,11 @@ const Skills = () => {
       color: 'from-yellow-500 to-yellow-600',
       skills: [
         { name: 'Git', level: 92, icon: '📝' },
-        { name: 'REST APIs', level: 88, icon: '🔌' },
-        { name: 'GraphQL', level: 70, icon: '📡' },
-        { name: 'JWT', level: 85, icon: '🔐' },
-        { name: 'OAuth', level: 78, icon: '🔑' },
-        { name: 'Agile/Scrum', level: 88, icon: '🔄' },
-        { name: 'Postman', level: 85, icon: '📬' }
+        { name: 'Docker', level: 84, icon: '🐳' },
+        { name: 'Terraform', level: 78, icon: '🏗️' },
+        { name: 'Power BI', level: 86, icon: '📊' },
+        { name: 'Tableau', level: 80, icon: '📈' },
+        { name: 'Jupyter', level: 85, icon: '📓' }
       ]
     }
   ];
@@ -147,7 +141,7 @@ const Skills = () => {
               variants={itemVariants}
               className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto"
             >
-              A comprehensive overview of my technical skills and proficiency levels
+              Data engineering-first skill set focused on scalable pipelines, cloud reliability, and analytics impact
             </motion.p>
           </motion.div>
         </div>
@@ -173,7 +167,7 @@ const Skills = () => {
               variants={itemVariants}
               className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto"
             >
-              Explore my expertise across different technology domains
+              Languages, cloud platforms, ETL systems, databases, and ML tooling used in production workflows
             </motion.p>
           </motion.div>
 
@@ -311,7 +305,7 @@ const Skills = () => {
                 Security
               </h3>
               <p className="text-gray-600 dark:text-gray-400 text-sm">
-                JWT, OAuth, API Security, Data Protection, Secure Coding Practices
+                Data access controls, schema governance, and reliable production permissions management
               </p>
             </motion.div>
 
@@ -326,7 +320,7 @@ const Skills = () => {
                 Performance
               </h3>
               <p className="text-gray-600 dark:text-gray-400 text-sm">
-                Optimization, Caching, Load Balancing, Performance Monitoring
+                Query tuning, Spark job optimization, partitioning strategy, and workload observability
               </p>
             </motion.div>
 
@@ -341,7 +335,7 @@ const Skills = () => {
                 Web Technologies
               </h3>
               <p className="text-gray-600 dark:text-gray-400 text-sm">
-                HTML5, CSS3, Responsive Design, Progressive Web Apps, SEO
+                BI dashboard development and self-serve analytics experiences for cross-functional teams
               </p>
             </motion.div>
 
@@ -356,7 +350,7 @@ const Skills = () => {
                 Testing
               </h3>
               <p className="text-gray-600 dark:text-gray-400 text-sm">
-                Unit Testing, Integration Testing, E2E Testing, Test-Driven Development
+                Data quality validation with dbt tests and custom Python checks for audit-ready outputs
               </p>
             </motion.div>
           </motion.div>
@@ -383,7 +377,7 @@ const Skills = () => {
               variants={itemVariants}
               className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto"
             >
-              Currently exploring and learning new technologies
+              Continuing to deepen expertise in modern data infrastructure and high-availability pipeline operations
             </motion.p>
           </motion.div>
 
@@ -398,7 +392,7 @@ const Skills = () => {
                     Currently Learning
                   </h3>
                   <div className="space-y-3">
-                    {['Kubernetes', 'Microservices Architecture', 'Advanced React Patterns', 'System Design', 'Performance Optimization', 'Cloud-Native Development'].map((skill) => (
+                    {['Kubernetes', 'Lakehouse Architecture', 'Streaming Data Pipelines', 'System Design', 'Query Performance Optimization', 'Cloud-Native Data Engineering'].map((skill) => (
                       <div key={skill} className="flex items-center space-x-3">
                         <div className="w-2 h-2 bg-primary-600 dark:bg-primary-400 rounded-full"></div>
                         <span className="text-gray-600 dark:text-gray-400">{skill}</span>
@@ -413,10 +407,10 @@ const Skills = () => {
                   </h3>
                   <div className="space-y-3">
                     {[
-                      'Building scalable SaaS platforms and enterprise applications',
-                      'Contributing to high-impact software engineering teams',
-                      'Applying advanced system design and architecture patterns',
-                      'Integrating AI/ML capabilities into production applications'
+                      'Designing reliable ELT systems with stronger SLAs and observability',
+                      'Scaling analytics enablement for self-serve business reporting',
+                      'Applying advanced Spark and distributed query optimization techniques',
+                      'Operationalizing ML and analytics workloads on cloud-native data platforms'
                     ].map((goal) => (
                       <div key={goal} className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-green-600 dark:bg-green-400 rounded-full mt-2"></div>
